@@ -1,0 +1,17 @@
+[19-Dec-2018 05:36:31 America/Bogota] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000] [1203] User depuracr_dobadm already has more than 'max_user_connections' active connections in /home2/depuracr/public_html/dobledos/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /home2/depuracr/public_html/dobledos/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=127....', 'depuracr_dobadm', '9)UFXMQe,ff-', Array)
+#1 /home2/depuracr/public_html/dobledos/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(44): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=127....', 'depuracr_dobadm', '9)UFXMQe,ff-', Array)
+#2 /home2/depuracr/public_html/dobledos/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'depuracr_dobadm', '9)UFXMQe,ff-', Array)
+#3 /home2/depuracr/public_html/dobledos/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(942): Doctrine\DBAL\Connection->connect()
+#4 /home2/depuracr/public_htm in /home2/depuracr/public_html/dobledos/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/AbstractMySQLDriver.php on line 115
+[19-Dec-2018 05:41:41 America/Bogota] PHP Warning:  Invalid argument supplied for foreach() in /home2/depuracr/public_html/dobledos/controllers/admin/AdminEmployeesController.php on line 658
+[19-Dec-2018 05:43:26 America/Bogota] PHP Warning:  Invalid argument supplied for foreach() in /home2/depuracr/public_html/dobledos/controllers/admin/AdminEmployeesController.php on line 658
+[19-Dec-2018 05:44:45 America/Bogota] PHP Warning:  Invalid argument supplied for foreach() in /home2/depuracr/public_html/dobledos/controllers/admin/AdminEmployeesController.php on line 658
+[19-Dec-2018 05:45:53 America/Bogota] PHP Warning:  Invalid argument supplied for foreach() in /home2/depuracr/public_html/dobledos/controllers/admin/AdminEmployeesController.php on line 658
+[19-Dec-2018 05:46:50 America/Bogota] PHP Warning:  Invalid argument supplied for foreach() in /home2/depuracr/public_html/dobledos/controllers/admin/AdminEmployeesController.php on line 658
+[19-Dec-2018 16:15:17 America/Chicago] PHP Warning:  Unknown: Input variables exceeded 1000. To increase the limit change max_input_vars in php.ini. in Unknown on line 0
+[19-Dec-2018 17:15:21 America/Bogota] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home2/depuracr/public_html/dobledos/vendor/symfony/symfony/src/Symfony/Component/Validator/Mapping/GenericMetadata.php on line 143
+[19-Dec-2018 17:15:21 America/Bogota] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 32768 bytes) in /home2/depuracr/public_html/dobledos/vendor/symfony/symfony/src/Symfony/Component/Debug/Exception/OutOfMemoryException.php on line 1
+[19-Dec-2018 17:15:21 America/Bogota] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 159744 bytes) in Unknown on line 0
+[19-Dec-2018 18:07:49 America/Bogota] PHP Warning:  reset() expects parameter 1 to be array, null given in /home2/depuracr/public_html/dobledos/src/PrestaShopBundle/Controller/Admin/AttributeController.php on line 177
