@@ -24,12 +24,13 @@
  *}
 {block name='header_banner'}
   <div class="header-banner">
-    <p>ENVÍOS NACIONALES GRATIS POR COMPRARS SUPERIORES A $200.00 PESOS COP</p>
+    
   </div>
 {/block}
 
 {block name='header_nav'}
   <div class="header-nav">
+    <p>ENVÍOS NACIONALES GRATIS POR COMPRAS SUPERIORES A $200.000 PESOS COP</p>
     {hook h='displayNav'}
   </div>
 {/block}
