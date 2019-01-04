@@ -1104,8 +1104,7 @@ body#checkout {
 .checkout-step.-complete > h1 {
   color: #008000;
 }
-.checkout-step.-current .content,
-.checkout-step.-js-current .content {
+.checkout-step.-current .content {
   display: block;
 }
 .checkout-step button.continue {
@@ -1417,7 +1416,158 @@ nav.pagination .current a {
 #search_filters .active_filters ul {
   padding-left: 20px;
 }
-/*# sourceMappingURL=css/st/dev.css.map */body {
-  background: #fefefe; }
+/*# sourceMappingURL=css/st/dev.css.map */@font-face {
+  font-family: 'Karla';
+  src: url(../css/054441c3aed6875ebdd3dcecf241980e.woff2) format("woff2"), url(../css/f12bf2b11383fd2115242d701c9f3640.woff) format("woff");
+  font-weight: normal;
+  font-style: normal; }
 
-/*# sourceMappingURL=theme.css.map*/
+@font-face {
+  font-family: 'Karla';
+  src: url(../css/3f956968f8cf83e79d4df3555979b8eb.woff2) format("woff2"), url(../css/9e2f0e7da592be67a21adcf866b01dc7.woff) format("woff");
+  font-weight: bold;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Karla';
+  src: url(../css/8af3b185b26d7b8fbb38d36c7df12b52.woff2) format("woff2"), url(../css/7693177522a96cbc42a0f0fb9493f192.woff) format("woff");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Karla';
+  src: url(../css/8700a10b16dfd1e52284120cf292d6d0.woff2) format("woff2"), url(../css/1ded87eb412b59427a1cdb40ea0c80dd.woff) format("woff");
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url(../css/81d328c5bdc9de775e438d55579051eb.woff2) format("woff2"), url(../css/fe358ba0f2aae8892205f97df7da2a1f.woff) format("woff");
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url(../css/8a5664f57c574df295a869657958c811.woff2) format("woff2"), url(../css/387ffb7a8dffac89f578a34b650cd23c.woff) format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url(../css/922e9441934c4530f3fe31fcbe6d7718.woff2) format("woff2"), url(../css/fa81056bb1e35ade38456c61a4fb5ba4.woff) format("woff");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url(../css/b859036e90677453a0e9f4651fda6adf.woff2) format("woff2"), url(../css/ae81cc736606b8e7e03378859f3a2ec6.woff) format("woff");
+  font-weight: 600;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url(../css/e5f4b2a7cfb78580010d17381016e070.woff2) format("woff2"), url(../css/6493dbe45a5b6d4984d7ea9dfc4e8a6d.woff) format("woff");
+  font-weight: bold;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url(../css/ed5429fa5ca9565cbc95c0feedab7074.woff2) format("woff2"), url(../css/5b515e7b1f05ba89ae71bf13ce6c5470.woff) format("woff");
+  font-weight: bold;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url(../css/846f2403081ea358f67810dcf97b9d76.woff2) format("woff2"), url(../css/e5943421489ee14afd686860fefc4872.woff) format("woff");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url(../css/cb2e16eb68148a464df0def683ad5416.woff2) format("woff2"), url(../css/61eb4430ce26a570bb4a909f040c6743.woff) format("woff");
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url(../css/c6be1446a9f16bfc406f8419f9c7139f.woff2) format("woff2"), url(../css/9126b40f151341e9e27693f9339b50a1.woff) format("woff");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url(../css/12824abc4558af8d25f5fb58c462856f.woff2) format("woff2"), url(../css/800f2029dec1abed75d97e79124880e5.woff) format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url(../css/b3cd7f033b0065be7a3c9c2dea0d0b9d.woff2) format("woff2"), url(../css/f93da11c46e58faeaf4a2ec55f66185a.woff) format("woff");
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Playfair Display SC';
+  src: url(../css/18903e3f76f02e8012311f1ec4544e78.woff2) format("woff2"), url(../css/ae1410468797bb1157da6d212ef3d88d.woff) format("woff");
+  font-weight: 900;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Playfair Display SC';
+  src: url(../css/ee0e07988907d80a6fbb18ec7f51c073.woff2) format("woff2"), url(../css/a14b0c2bdaef8a226b10284be7b28eed.woff) format("woff");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Playfair Display SC';
+  src: url(../css/0a04150b7a815b4500b3e79e7efdd1e7.woff2) format("woff2"), url(../css/defac5d8d244b155517399f26b47914d.woff) format("woff");
+  font-weight: 900;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url(../css/1813437a3a2e91bb21b57f6c6090d727.woff2) format("woff2"), url(../css/c80adc9881802afaaaa772b8c1ac7c33.woff) format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url(../css/2bd5510d6509e113fc7b3e5c141f217c.woff2) format("woff2"), url(../css/f4715c749a097e7dd9d3f9dd1d36f2a1.woff) format("woff");
+  font-weight: 900;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url(../css/31bd595bbccb5387c0961e8d0e0368c0.woff2) format("woff2"), url(../css/d4f6d59d79636a683a35e2faa5e90131.woff) format("woff");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Playfair Display SC';
+  src: url(../css/d350072df43cb8069d1292d22ff7cdf9.woff2) format("woff2"), url(../css/f5c6ff96c955fe12e6164a7d2a90416f.woff) format("woff");
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url(../css/b050c953edd8442b512026367c8d4be6.woff2) format("woff2"), url(../css/d1a367124b79f003b04be2ef07e32016.woff) format("woff");
+  font-weight: 900;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Playfair Display SC';
+  src: url(../css/0ae83b152b729e5ce2bcc0056fc8e508.woff2) format("woff2"), url(../css/31158314ff101bb5990bad444ed7113c.woff) format("woff");
+  font-weight: bold;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url(../css/ad7f60127154619a34de3f26ea2e7ea4.woff2) format("woff2"), url(../css/895e74076a6b81837ef0a4bfd998803d.woff) format("woff");
+  font-weight: bold;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Playfair Display SC';
+  src: url(../css/2ac875271d35ba9c15ba515769e38180.woff2) format("woff2"), url(../css/3cb68a68bb370ef40ea9b55d111fe7df.woff) format("woff");
+  font-weight: normal;
+  font-style: normal; }

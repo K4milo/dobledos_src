@@ -1,5 +1,10 @@
-$body-background-color: #fefefe;
 
-body {
-  background: $body-background-color;
-}
+// Common Styles
+
+@import "commons/fonts";
+@import "commons/vars";
+@import "commons/mixins";
+@import "commons/general";
+@import "commons/header";
+@import "commons/footer";
+

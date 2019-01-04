@@ -24,7 +24,7 @@
  *}
 {block name='header_banner'}
   <div class="header-banner">
-    {hook h='displayBanner'}
+    <p>ENVÍOS NACIONALES GRATIS POR COMPRARS SUPERIORES A $200.00 PESOS COP</p>
   </div>
 {/block}
 
