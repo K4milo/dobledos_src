@@ -1,0 +1,15 @@
+body {
+	font-size: 16px;
+	font-family: $karla;
+
+	// font titles
+	h1,h2,h3,h4,h5 {
+		font-family: $karla;
+		font-weight: bold;		
+	}
+
+	// style for anchors
+	a {
+		transition: all 0.3s;
+	}
+}

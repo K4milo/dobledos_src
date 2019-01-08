@@ -13,6 +13,7 @@ $browser-context: 16; // Default
 @mixin bgcover{
   background-size: cover;
   background-position: center center;
+  background-repeat: no-repeat;
 }
 
 @mixin bgparallax{
@@ -34,14 +35,14 @@ $browser-context: 16; // Default
 }
 
 // Define default font size
-@function Rem($size) {
+@function rem($size) {
   $remSize: $size / 16px;
   @return $remSize * 1rem;
 }
 
 @mixin font($size) {
   font-size: $size;
-  font-size: Rem($size);
+  font-size: rem($size);
 }
 
 // Gradients
@@ -89,6 +90,20 @@ $browser-context: 16; // Default
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+  }
+}
+
+// Buttons
+@mixin btnBlack($paddVert, $paddHor, $fsize) {
+  color: $white;
+  background-color: $black;
+  display: inline-block;
+  padding: $paddVert $paddHor;
+  font-size: $fsize;
+  text-align: center;
+  &:hover {
+    background-color: $white;
+    color: $black;
   }
 }
 

@@ -28,24 +28,53 @@
   </div>
 {/block}
 
-{block name='header_nav'}
-  <div class="header-nav">
-    <p>ENVÍOS NACIONALES GRATIS POR COMPRAS SUPERIORES A $200.000 PESOS COP</p>
-    {hook h='displayNav'}
+{block name='header_copy'}
+<div class="top-bar-copy">
+  <p>ENVÍOS NACIONALES GRATIS POR COMPRAS SUPERIORES A $200.000 PESOS COP</p>
+</div>
+{/block}
+
+<div class="main-navigation">
+
+  {block name='header_logo'}
+    <a class="logo" href="{$urls.base_url}" title="{$shop.name}">
+      <img src="{$shop.logo}" alt="{$shop.name}">
+    </a>
+  {/block}
+
+  {block name='nav_top'}
+    <button class="mobile-button">
+      <span class="bar-1"></span>
+      <span class="bar-2"></span>
+      <span class="bar-3"></span>
+    </button>
+
+    <nav class="navigation">
+      {hook h='displayTop'}
+    </nav>
+  {/block}
+
+  <div class="search-btn">
+    <i class="fas fa-search"></i>
+  </div>
+
+  {block name='account_user'}
+    {hook h='displayNavFullWidth'}
+  {/block}
+
+
+
+  {block name='header_nav'}
+    <div class="header-nav">
+      {hook h='displayNav'}
+    </div>
+  {/block}
+
+</div>
+
+{block name='search'}
+  <div class="main-search">
+    {hook h='displaySearch'}
   </div>
 {/block}
 
-{block name='header_logo'}
-  <a class="logo" href="{$urls.base_url}" title="{$shop.name}">
-    <img src="{$shop.logo}" alt="{$shop.name}">
-  </a>
-{/block}
-
-{block name='header_top'}
-  <div class="header-top">
-    {hook h='displayTop'}
-  </div>
-
-  {hook h='displayNavFullWidth'}
-
-{/block}

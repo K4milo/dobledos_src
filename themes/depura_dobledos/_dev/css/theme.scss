@@ -1,6 +1,10 @@
 
-// Common Styles
+// Vendors
+@import "vendors/fontawesome/scss/fontawesome";
+@import "vendors/fontawesome/scss/solid";
+@import "vendors/fontawesome/scss/brands";
 
+// Common Styles
 @import "commons/fonts";
 @import "commons/vars";
 @import "commons/mixins";
@@ -8,3 +12,10 @@
 @import "commons/header";
 @import "commons/footer";
 
+// Modules
+@import "modules/module-searchbar";
+@import "modules/module-breadcrumb";
+@import "modules/module-slider";
+
+// Pages
+@import "pages/home";
