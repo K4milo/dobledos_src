@@ -4,5 +4,18 @@ body {
 		.page-header {
 			display: none;
 		}
+
+		section {
+			&#main {
+				> section {
+					h1 {
+						text-align: center;
+						display: inline-block;
+						@include font(45px);
+						line-height: 1;
+					}
+				}
+			}
+		}
 	}
 }
