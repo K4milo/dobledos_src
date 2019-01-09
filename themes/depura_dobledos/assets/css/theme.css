@@ -5392,7 +5392,7 @@ readers do not read off random characters that represent icons */
   font-style: normal;
   font-weight: 900;
   src: url(../css/2e302fa4c6eeb1bc06149067bae3e7b4.eot);
-  src: url(../css/2e302fa4c6eeb1bc06149067bae3e7b4.eot?#iefix) format("embedded-opentype"), url(../css/5dc01cfcd5336f696cb85da7ce53fa9b.woff2) format("woff2"), url(../css/a8eedaadb16b569a48a061d4aafa2d2e.woff) format("woff"), url(../css/80c404ff42e52d9e7589e83fe21307b4.ttf) format("truetype"), url(../css/27603739fe78fee587c7b84873475b61.svg#fontawesome) format("svg"); }
+  src: url(../css/2e302fa4c6eeb1bc06149067bae3e7b4.eot?#iefix) format("embedded-opentype"), url(../css/5dc01cfcd5336f696cb85da7ce53fa9b.woff2) format("woff2"), url(../css/a8eedaadb16b569a48a061d4aafa2d2e.woff) format("woff"), url(../css/80c404ff42e52d9e7589e83fe21307b4.ttf) format("truetype"), url(../css/b7c60297fd4238ed7bf0df6f8842c3df.svg#fontawesome) format("svg"); }
 
 .fa,
 .fas,
@@ -5405,7 +5405,7 @@ header#header .main-navigation .header-nav .user-info::before {
   font-style: normal;
   font-weight: normal;
   src: url(../css/cbd387d93e253048800dc9ee22b85c24.eot);
-  src: url(../css/cbd387d93e253048800dc9ee22b85c24.eot?#iefix) format("embedded-opentype"), url(../css/eac60e8a656781e13d2a674b4d9051c0.woff2) format("woff2"), url(../css/d30c44aaad8efa7626428c8294f7e880.woff) format("woff"), url(../css/d6ac6c968cff1abcbf5d548828b9f6c6.ttf) format("truetype"), url(../css/fef43c1fd872ef7f1880483d9b63ccf2.svg#fontawesome) format("svg"); }
+  src: url(../css/cbd387d93e253048800dc9ee22b85c24.eot?#iefix) format("embedded-opentype"), url(../css/eac60e8a656781e13d2a674b4d9051c0.woff2) format("woff2"), url(../css/d30c44aaad8efa7626428c8294f7e880.woff) format("woff"), url(../css/d6ac6c968cff1abcbf5d548828b9f6c6.ttf) format("truetype"), url(../css/4568b5b5034960068b1cd0f69dab2039.svg#fontawesome) format("svg"); }
 
 .fab {
   font-family: 'Font Awesome 5 Brands'; }
@@ -5948,6 +5948,34 @@ body.page-index ul.parent-three {
         body.page-index ul.parent-three .childs ul li.thumb-category a.thumb-btn:hover {
           background-color: #ffffff;
           color: #000000; }
+
+.row-banner {
+  display: block;
+  text-align: center; }
+  .row-banner h2 {
+    font-size: 45px;
+    font-size: 2.8125rem;
+    line-height: 1;
+    margin: 0; }
+  .row-banner p {
+    font-family: "Playfair Display";
+    font-size: 18px;
+    font-size: 1.125rem;
+    display: block;
+    max-width: 37.5rem;
+    margin: 1.25rem auto; }
+  .row-banner.row-banner--white {
+    background-color: #ffffff;
+    padding: 1.25rem 0; }
+  .row-banner.row-banner--bg-photo {
+    background-color: #000000;
+    background-image: url(../css/1431bb3ac2241874f77b982933abb79e.jpg);
+    padding: 6.5625rem 0;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center top; }
+    .row-banner.row-banner--bg-photo h2, .row-banner.row-banner--bg-photo p {
+      color: #ffffff; }
 
 body #main section.product-pod-loop {
   background-color: #F7F7F7;

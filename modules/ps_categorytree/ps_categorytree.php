@@ -32,8 +32,6 @@ use PrestaShop\PrestaShop\Core\Module\WidgetInterface;
 
 class Ps_CategoryTree extends Module implements WidgetInterface
 {
-
-    //protected $page_name = '';
      
     public function __construct()
     {
@@ -278,14 +276,19 @@ class Ps_CategoryTree extends Module implements WidgetInterface
         }
     }
 
+    public function resetVisitedCategory()
+    {
+        $this->context->cookie->last_visited_category = 2;
+    }
+
     public function renderWidget($hookName = null, array $configuration = [])
     {
+        $pagename = $this->context->controller->php_self == 'index';
         
-
-        if ($page_name != 'index') {
-            $this->setLastVisitedCategory();
+        if ($pagename == 'index') {
+            $this->resetVisitedCategory();
         } else {
-
+            $this->setLastVisitedCategory();
         }
 
         $this->smarty->assign($this->getWidgetVariables($hookName, $configuration));

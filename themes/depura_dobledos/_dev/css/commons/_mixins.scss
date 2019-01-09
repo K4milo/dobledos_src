@@ -10,13 +10,13 @@ $browser-context: 16; // Default
   }
 }
 
-@mixin bgcover{
+@mixin bgcover {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
 }
 
-@mixin bgparallax{
+@mixin bgparallax {
   background-attachment: fixed;
   background-size: cover;
   background-position: center top;

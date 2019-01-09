@@ -610,7 +610,7 @@ class ProductController extends FrameworkBundleAdminController
         }
 
         $doctrine = $this->getDoctrine()->getManager();
-        $attributeGroups = $doctrine->getRepository('PrestaShopBundle:Attribute')->findByLangAndShop(1, 1);
+        $attributeGroups = $doctrine->getRepository('PrestaShopBundle:Attribute')->findByLangAndShop(2, 1);
 
         $drawerModules = (new HookFinder())->setHookName('displayProductPageDrawer')
             ->setParams(['product' => $product])
