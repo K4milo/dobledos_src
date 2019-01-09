@@ -16,9 +16,14 @@
 @import "modules/module-searchbar";
 @import "modules/module-breadcrumb";
 @import "modules/module-slider";
+@import "modules/module-categories";
 
 // Pages
 @import "pages/home";
+
+// BLocks
+@import "blocks/home/grid-blocks";
+@import "blocks/home/home-categories";
 
 // Loops
 @import "loops/products-home";

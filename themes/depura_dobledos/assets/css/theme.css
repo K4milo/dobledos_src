@@ -5392,7 +5392,7 @@ readers do not read off random characters that represent icons */
   font-style: normal;
   font-weight: 900;
   src: url(../css/2e302fa4c6eeb1bc06149067bae3e7b4.eot);
-  src: url(../css/2e302fa4c6eeb1bc06149067bae3e7b4.eot?#iefix) format("embedded-opentype"), url(../css/5dc01cfcd5336f696cb85da7ce53fa9b.woff2) format("woff2"), url(../css/a8eedaadb16b569a48a061d4aafa2d2e.woff) format("woff"), url(../css/80c404ff42e52d9e7589e83fe21307b4.ttf) format("truetype"), url(../css/b7c60297fd4238ed7bf0df6f8842c3df.svg#fontawesome) format("svg"); }
+  src: url(../css/2e302fa4c6eeb1bc06149067bae3e7b4.eot?#iefix) format("embedded-opentype"), url(../css/5dc01cfcd5336f696cb85da7ce53fa9b.woff2) format("woff2"), url(../css/a8eedaadb16b569a48a061d4aafa2d2e.woff) format("woff"), url(../css/80c404ff42e52d9e7589e83fe21307b4.ttf) format("truetype"), url(../css/27603739fe78fee587c7b84873475b61.svg#fontawesome) format("svg"); }
 
 .fa,
 .fas,
@@ -5405,7 +5405,7 @@ header#header .main-navigation .header-nav .user-info::before {
   font-style: normal;
   font-weight: normal;
   src: url(../css/cbd387d93e253048800dc9ee22b85c24.eot);
-  src: url(../css/cbd387d93e253048800dc9ee22b85c24.eot?#iefix) format("embedded-opentype"), url(../css/eac60e8a656781e13d2a674b4d9051c0.woff2) format("woff2"), url(../css/d30c44aaad8efa7626428c8294f7e880.woff) format("woff"), url(../css/d6ac6c968cff1abcbf5d548828b9f6c6.ttf) format("truetype"), url(../css/4568b5b5034960068b1cd0f69dab2039.svg#fontawesome) format("svg"); }
+  src: url(../css/cbd387d93e253048800dc9ee22b85c24.eot?#iefix) format("embedded-opentype"), url(../css/eac60e8a656781e13d2a674b4d9051c0.woff2) format("woff2"), url(../css/d30c44aaad8efa7626428c8294f7e880.woff) format("woff"), url(../css/d6ac6c968cff1abcbf5d548828b9f6c6.ttf) format("truetype"), url(../css/fef43c1fd872ef7f1880483d9b63ccf2.svg#fontawesome) format("svg"); }
 
 .fab {
   font-family: 'Font Awesome 5 Brands'; }
@@ -5791,6 +5791,7 @@ body .homeslider-container {
             font-size: 2.5rem; } }
       body .homeslider-container .slide > div a.btn {
         color: #ffffff;
+        text-decoration: none;
         background-color: #000000;
         display: inline-block;
         padding: 0.625rem 1.25rem;
@@ -5810,14 +5811,151 @@ body.page-index section#main > section h1 {
   display: inline-block;
   font-size: 45px;
   font-size: 2.8125rem;
+  color: #000000;
   line-height: 1; }
 
+@media (min-width: 768px) {
+  body.page-index section.custom-blocks {
+    display: flex; } }
+
+body.page-index section.custom-blocks .custom-block-item {
+  display: block;
+  width: 100%;
+  text-align: center; }
+  @media (min-width: 768px) {
+    body.page-index section.custom-blocks .custom-block-item {
+      width: 50%; } }
+  body.page-index section.custom-blocks .custom-block-item h2,
+  body.page-index section.custom-blocks .custom-block-item h3 {
+    display: block;
+    position: relative;
+    padding: 1.375rem;
+    font-size: 25px;
+    font-size: 1.5625rem;
+    margin: 0; }
+    @media (min-width: 768px) {
+      body.page-index section.custom-blocks .custom-block-item h2,
+      body.page-index section.custom-blocks .custom-block-item h3 {
+        font-size: 40px;
+        font-size: 2.5rem; } }
+  body.page-index section.custom-blocks .custom-block-item h2::after {
+    content: "";
+    display: block;
+    height: 0;
+    width: 0;
+    border-top: 0.875rem solid transparent;
+    border-bottom: 0.875rem solid transparent;
+    border-left: 0.875rem solid #000000;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 0.9375rem; }
+  body.page-index section.custom-blocks .custom-block-item h3::before {
+    content: "";
+    display: block;
+    height: 0;
+    width: 0;
+    border-top: 0.875rem solid transparent;
+    border-right: 0.875rem solid #000000;
+    border-bottom: 0.875rem solid transparent;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 0.9375rem; }
+  body.page-index section.custom-blocks .custom-block-item p {
+    font-family: "Playfair Display";
+    font-size: 20px;
+    font-size: 1.25rem;
+    margin: 0 0 0 0; }
+  body.page-index section.custom-blocks .custom-block-item img {
+    display: block;
+    width: 100%;
+    height: auto; }
+
+@media (min-width: 768px) {
+  body.page-index section.custom-blocks {
+    display: flex; } }
+
+body.page-index section.custom-blocks .custom-block-item {
+  display: block;
+  width: 100%;
+  text-align: center; }
+  @media (min-width: 768px) {
+    body.page-index section.custom-blocks .custom-block-item {
+      width: 50%; } }
+  body.page-index section.custom-blocks .custom-block-item h2,
+  body.page-index section.custom-blocks .custom-block-item h3 {
+    display: block;
+    position: relative;
+    padding: 1.375rem;
+    font-size: 25px;
+    font-size: 1.5625rem;
+    margin: 0; }
+    @media (min-width: 768px) {
+      body.page-index section.custom-blocks .custom-block-item h2,
+      body.page-index section.custom-blocks .custom-block-item h3 {
+        font-size: 40px;
+        font-size: 2.5rem; } }
+  body.page-index section.custom-blocks .custom-block-item p {
+    font-family: "Playfair Display";
+    font-size: 20px;
+    font-size: 1.25rem;
+    margin: 0 0 0 0; }
+  body.page-index section.custom-blocks .custom-block-item img {
+    display: block;
+    width: 100%;
+    height: auto; }
+
+body.page-index ul.parent-three {
+  padding: 0 0 0 0; }
+  body.page-index ul.parent-three .parent-three-cat {
+    display: none; }
+  body.page-index ul.parent-three .childs ul {
+    padding: 0;
+    width: 100%;
+    margin: 0 auto; }
+    body.page-index ul.parent-three .childs ul li.thumb-category {
+      position: relative;
+      display: block;
+      width: 100%;
+      height: auto; }
+      @media (min-width: 992px) {
+        body.page-index ul.parent-three .childs ul li.thumb-category {
+          display: inline-block;
+          vertical-align: top;
+          width: 23%;
+          margin: 1%; } }
+      body.page-index ul.parent-three .childs ul li.thumb-category figure {
+        margin: 0 0 0 0; }
+        body.page-index ul.parent-three .childs ul li.thumb-category figure img {
+          display: block;
+          width: 100%;
+          height: auto; }
+      body.page-index ul.parent-three .childs ul li.thumb-category a.thumb-btn {
+        text-transform: uppercase;
+        color: #ffffff;
+        text-decoration: none;
+        background-color: rgba(0, 0, 0, 0.7);
+        display: inline-block;
+        padding: 0.9375rem 1.375rem;
+        font-size: 1.25rem;
+        text-align: center;
+        border: 0.125rem solid;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%); }
+        body.page-index ul.parent-three .childs ul li.thumb-category a.thumb-btn:hover {
+          background-color: #ffffff;
+          color: #000000; }
+
 body #main section.product-pod-loop {
-  background-color: #D3D3D3;
+  background-color: #F7F7F7;
   padding: 0.9375rem 0;
   text-align: center; }
   body #main section.product-pod-loop > a {
     color: #ffffff;
+    text-decoration: none;
     background-color: #000000;
     display: inline-block;
     padding: 0.625rem 1.25rem;

@@ -12,7 +12,64 @@ body {
 						text-align: center;
 						display: inline-block;
 						@include font(45px);
+						color: $black;
 						line-height: 1;
+					}
+				}
+			}
+
+			&.custom-blocks {
+				@include mq(sm){
+					display: flex;
+				}
+				.custom-block-item {
+					display: block;
+					width: 100%;
+					text-align: center;
+					@include mq(sm){
+						width: 50%;
+					}
+					h2,
+					h3 {
+						display: block;
+						position: relative;
+						padding: rem(22px);
+						@include font(25px);
+						margin: 0;
+						@include mq(sm){
+							@include font(40px);
+						}
+					}
+					
+					h2 {
+						&::after {
+							content:"";
+							@include arrow('right', $black, rem(14px));
+							display: inline-block;
+							vertical-align: middle;
+							margin-left: rem(15px);
+						}
+					}
+
+					h3 {
+						&::before {
+							content: "";
+							@include arrow('left', $black, rem(14px));
+							display: inline-block;
+							vertical-align: middle;
+							margin-right: rem(15px);
+						}
+					}
+
+					p {
+						font-family: $play;
+						@include font(20px);
+						margin: 0 0 0 0;
+					}
+					img {
+						display: block;
+						width: 100%;
+						height: auto;
 					}
 				}
 			}

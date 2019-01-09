@@ -1,0 +1,9 @@
+.category-tree {
+	ul {
+		&.parent-three {
+			.parent-three-cat {}
+			// Wrapper list
+			.childs {}
+		}
+	}
+}
