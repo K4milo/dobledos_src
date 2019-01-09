@@ -32,6 +32,9 @@ use PrestaShop\PrestaShop\Core\Module\WidgetInterface;
 
 class Ps_CategoryTree extends Module implements WidgetInterface
 {
+
+    //protected $page_name = '';
+     
     public function __construct()
     {
         $this->name = 'ps_categorytree';
@@ -277,7 +280,14 @@ class Ps_CategoryTree extends Module implements WidgetInterface
 
     public function renderWidget($hookName = null, array $configuration = [])
     {
-        $this->setLastVisitedCategory();
+        
+
+        if ($page_name != 'index') {
+            $this->setLastVisitedCategory();
+        } else {
+
+        }
+
         $this->smarty->assign($this->getWidgetVariables($hookName, $configuration));
 
         return $this->fetch('module:ps_categorytree/views/templates/hook/ps_categorytree.tpl');
