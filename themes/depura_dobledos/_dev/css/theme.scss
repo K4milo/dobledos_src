@@ -21,10 +21,14 @@
 // Pages
 @import "pages/home";
 
-// BLocks
+// Blocks
 @import "blocks/home/grid-blocks";
 @import "blocks/home/home-categories";
 @import "blocks/home/home-banners";
+
+@import "blocks/sizes/blocks-contact-info";
+@import "blocks/sizes/middle-blocks";
+@import "blocks/sizes/top-content";
 
 // Loops
 @import "loops/products-home";

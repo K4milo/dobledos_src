@@ -138,6 +138,7 @@ class Ps_Shoppingcart extends Module implements WidgetInterface
             parent::install()
                 && $this->registerHook('header')
                 && $this->registerHook('displayTop')
+                && $this->registerHook('displaySizesCms')
                 && Configuration::updateValue('PS_BLOCK_CART_AJAX', 1)
         ;
     }
