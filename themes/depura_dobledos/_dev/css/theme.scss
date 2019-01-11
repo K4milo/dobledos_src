@@ -10,6 +10,7 @@
 @import "commons/mixins";
 @import "commons/general";
 @import "commons/header";
+@import "commons/forms";
 @import "commons/footer";
 
 // Modules
@@ -29,6 +30,8 @@
 @import "blocks/sizes/blocks-contact-info";
 @import "blocks/sizes/middle-blocks";
 @import "blocks/sizes/top-content";
+
+@import "blocks/bonus/bonus-blocks";
 
 // Loops
 @import "loops/products-home";

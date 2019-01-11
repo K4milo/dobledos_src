@@ -1,0 +1,58 @@
+form {
+	display: block;
+	position: relative;
+	text-align: left;
+	.form-fields {
+		> label {
+			display: block;
+			margin: 15px 0;
+			> span {
+				display: block;
+			}
+			select {
+				display: block;
+				width: 100%;
+				border: none;
+				background-color: $gray;
+				color: $black;
+				font-size: rem(18px);
+				padding: rem(15px) rem(12px);
+			}
+			input {
+				&[type="text"],
+				&[type="email"],
+				&[type="tel"],
+				&[type="file"] {
+					display: block;
+					width: 100%;
+					border: none;
+					background-color: $gray;
+					color: $black;
+					font-size: rem(18px);
+					padding: rem(15px) rem(12px);
+					@include placeholder {
+						color: $black;
+					}
+				}
+			}
+
+			textarea {
+				display: block;
+				width: 100%;
+				border: none;
+				background-color: $gray;
+				color: $black;
+				font-size: rem(18px);
+				padding: rem(15px) rem(12px);
+			}
+		}
+	}
+
+	footer {
+		button {
+			display: inline-block;
+			text-transform: uppercase;
+			@include btnBlack(rem(10px), rem(20px), rem(20px));
+		}
+	}
+}

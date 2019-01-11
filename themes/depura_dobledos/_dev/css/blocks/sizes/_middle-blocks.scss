@@ -1,3 +1,84 @@
 .middle-blocks {
-	
+	display: block;
+	@include mq(sm){
+		display: flex;
+	}
+
+	section {
+		&.custom-blocks {
+			overflow: hidden;
+			.custom-block-item {
+				display: block;
+				width: 100%;
+				text-align: center;
+				@include mq(sm){
+					width: 50%;
+					float: left;
+				}
+				h2,
+				h3 {
+					display: block;
+					position: relative;
+					padding: rem(22px);
+					@include font(25px);
+					margin: 0;
+					@include mq(sm){
+						@include font(40px);
+					}
+				}
+				p {
+					font-family: $play;
+					@include font(20px);
+					margin: 0 0 0 0;
+				}
+				img {
+					display: block;
+					width: 100%;
+					height: auto;
+				}
+				&:first-child {
+					@include mq(sm){
+						h2,h3 {
+							&::after {
+								content:"";
+								@include arrow('right', $black, rem(14px));
+								display: inline-block;
+								vertical-align: middle;
+								margin-left: rem(15px);
+							}
+						}
+					}
+				}
+				&:last-child {
+					@include mq(sm){
+						width: 100%;
+						clear: both;
+						h2,h3 {
+							&::after {
+								content:"";
+								@include arrow('left', $black, rem(14px));
+								display: inline-block;
+								vertical-align: middle;
+								margin-left: rem(15px);
+							}
+						}
+					}
+					display: block;
+					text-align: center;
+					h2 {
+						@include font(45px);
+						line-height: 1;
+						margin: 0;
+					}
+					p {
+						font-family: $play;
+						@include font(18px);
+						display: block;
+						max-width: rem(600px);
+						margin: 0 auto;
+					}
+				}
+			}
+		}
+	}
 }

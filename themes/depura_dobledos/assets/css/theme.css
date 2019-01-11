@@ -5392,7 +5392,7 @@ readers do not read off random characters that represent icons */
   font-style: normal;
   font-weight: 900;
   src: url(../css/2e302fa4c6eeb1bc06149067bae3e7b4.eot);
-  src: url(../css/2e302fa4c6eeb1bc06149067bae3e7b4.eot?#iefix) format("embedded-opentype"), url(../css/5dc01cfcd5336f696cb85da7ce53fa9b.woff2) format("woff2"), url(../css/a8eedaadb16b569a48a061d4aafa2d2e.woff) format("woff"), url(../css/80c404ff42e52d9e7589e83fe21307b4.ttf) format("truetype"), url(../css/27603739fe78fee587c7b84873475b61.svg#fontawesome) format("svg"); }
+  src: url(../css/2e302fa4c6eeb1bc06149067bae3e7b4.eot?#iefix) format("embedded-opentype"), url(../css/5dc01cfcd5336f696cb85da7ce53fa9b.woff2) format("woff2"), url(../css/a8eedaadb16b569a48a061d4aafa2d2e.woff) format("woff"), url(../css/80c404ff42e52d9e7589e83fe21307b4.ttf) format("truetype"), url(../css/b7c60297fd4238ed7bf0df6f8842c3df.svg#fontawesome) format("svg"); }
 
 .fa,
 .fas,
@@ -5405,7 +5405,7 @@ header#header .main-navigation .header-nav .user-info::before {
   font-style: normal;
   font-weight: normal;
   src: url(../css/cbd387d93e253048800dc9ee22b85c24.eot);
-  src: url(../css/cbd387d93e253048800dc9ee22b85c24.eot?#iefix) format("embedded-opentype"), url(../css/eac60e8a656781e13d2a674b4d9051c0.woff2) format("woff2"), url(../css/d30c44aaad8efa7626428c8294f7e880.woff) format("woff"), url(../css/d6ac6c968cff1abcbf5d548828b9f6c6.ttf) format("truetype"), url(../css/fef43c1fd872ef7f1880483d9b63ccf2.svg#fontawesome) format("svg"); }
+  src: url(../css/cbd387d93e253048800dc9ee22b85c24.eot?#iefix) format("embedded-opentype"), url(../css/eac60e8a656781e13d2a674b4d9051c0.woff2) format("woff2"), url(../css/d30c44aaad8efa7626428c8294f7e880.woff) format("woff"), url(../css/d6ac6c968cff1abcbf5d548828b9f6c6.ttf) format("truetype"), url(../css/4568b5b5034960068b1cd0f69dab2039.svg#fontawesome) format("svg"); }
 
 .fab {
   font-family: 'Font Awesome 5 Brands'; }
@@ -5704,6 +5704,61 @@ header#header .main-navigation {
         text-indent: -999999px;
         overflow: hidden; }
 
+form {
+  display: block;
+  position: relative;
+  text-align: left; }
+  form .form-fields > label {
+    display: block;
+    margin: 15px 0; }
+    form .form-fields > label > span {
+      display: block; }
+    form .form-fields > label select {
+      display: block;
+      width: 100%;
+      border: none;
+      background-color: #D3D3D3;
+      color: #000000;
+      font-size: 1.125rem;
+      padding: 0.9375rem 0.75rem; }
+    form .form-fields > label input[type="text"], form .form-fields > label input[type="email"], form .form-fields > label input[type="tel"], form .form-fields > label input[type="file"] {
+      display: block;
+      width: 100%;
+      border: none;
+      background-color: #D3D3D3;
+      color: #000000;
+      font-size: 1.125rem;
+      padding: 0.9375rem 0.75rem; }
+      form .form-fields > label input[type="text"] ::-webkit-input-placeholder, form .form-fields > label input[type="email"] ::-webkit-input-placeholder, form .form-fields > label input[type="tel"] ::-webkit-input-placeholder, form .form-fields > label input[type="file"] ::-webkit-input-placeholder {
+        color: #000000; }
+      form .form-fields > label input[type="text"] :-moz-placeholder, form .form-fields > label input[type="email"] :-moz-placeholder, form .form-fields > label input[type="tel"] :-moz-placeholder, form .form-fields > label input[type="file"] :-moz-placeholder {
+        color: #000000; }
+      form .form-fields > label input[type="text"] ::-moz-placeholder, form .form-fields > label input[type="email"] ::-moz-placeholder, form .form-fields > label input[type="tel"] ::-moz-placeholder, form .form-fields > label input[type="file"] ::-moz-placeholder {
+        color: #000000; }
+      form .form-fields > label input[type="text"] :-ms-input-placeholder, form .form-fields > label input[type="email"] :-ms-input-placeholder, form .form-fields > label input[type="tel"] :-ms-input-placeholder, form .form-fields > label input[type="file"] :-ms-input-placeholder {
+        color: #000000; }
+    form .form-fields > label textarea {
+      display: block;
+      width: 100%;
+      border: none;
+      background-color: #D3D3D3;
+      color: #000000;
+      font-size: 1.125rem;
+      padding: 0.9375rem 0.75rem; }
+  form footer button {
+    display: inline-block;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #000000;
+    display: inline-block;
+    padding: 0.625rem 1.25rem;
+    font-size: 1.25rem;
+    text-align: center; }
+    form footer button:hover {
+      background-color: #ffffff;
+      color: #000000; }
+
 .main-search {
   display: none;
   padding: 1.25rem;
@@ -5976,6 +6031,155 @@ body.page-index ul.parent-three {
     background-position: center top; }
     .row-banner.row-banner--bg-photo h2, .row-banner.row-banner--bg-photo p {
       color: #ffffff; }
+
+.blocks-contact-info {
+  display: block;
+  padding: 1.875rem 0; }
+  @media (min-width: 768px) {
+    .blocks-contact-info {
+      overflow: hidden;
+      color: #ffffff; } }
+  .blocks-contact-info > section {
+    display: block;
+    padding: 0 2%;
+    color: #000000; }
+    @media (min-width: 768px) {
+      .blocks-contact-info > section {
+        width: 46%;
+        float: left; } }
+    .blocks-contact-info > section.custom-blocks {
+      text-align: center; }
+      .blocks-contact-info > section.custom-blocks p {
+        font-family: "Playfair Display";
+        font-size: 20px;
+        font-size: 1.25rem;
+        display: block;
+        max-width: 37.5rem;
+        margin: 1.25rem auto; }
+      .blocks-contact-info > section.custom-blocks a {
+        display: inline-block;
+        text-transform: uppercase;
+        color: #ffffff;
+        text-decoration: none;
+        background-color: #000000;
+        display: inline-block;
+        padding: 0.625rem 1.25rem;
+        font-size: 1.25rem;
+        text-align: center; }
+        .blocks-contact-info > section.custom-blocks a:hover {
+          background-color: #ffffff;
+          color: #000000; }
+    .blocks-contact-info > section.login-form header {
+      text-align: center; }
+      .blocks-contact-info > section.login-form header h1 {
+        font-size: 30px;
+        font-size: 1.875rem;
+        text-transform: uppercase;
+        line-height: 1;
+        margin: 0; }
+      .blocks-contact-info > section.login-form header p {
+        font-family: "Playfair Display";
+        font-size: 20px;
+        font-size: 1.25rem;
+        display: block;
+        max-width: 37.5rem;
+        margin: 1.25rem auto; }
+
+.middle-blocks {
+  display: block; }
+  @media (min-width: 768px) {
+    .middle-blocks {
+      display: flex; } }
+  .middle-blocks section.custom-blocks {
+    overflow: hidden; }
+    .middle-blocks section.custom-blocks .custom-block-item {
+      display: block;
+      width: 100%;
+      text-align: center; }
+      @media (min-width: 768px) {
+        .middle-blocks section.custom-blocks .custom-block-item {
+          width: 50%;
+          float: left; } }
+      .middle-blocks section.custom-blocks .custom-block-item h2,
+      .middle-blocks section.custom-blocks .custom-block-item h3 {
+        display: block;
+        position: relative;
+        padding: 1.375rem;
+        font-size: 25px;
+        font-size: 1.5625rem;
+        margin: 0; }
+        @media (min-width: 768px) {
+          .middle-blocks section.custom-blocks .custom-block-item h2,
+          .middle-blocks section.custom-blocks .custom-block-item h3 {
+            font-size: 40px;
+            font-size: 2.5rem; } }
+      .middle-blocks section.custom-blocks .custom-block-item p {
+        font-family: "Playfair Display";
+        font-size: 20px;
+        font-size: 1.25rem;
+        margin: 0 0 0 0; }
+      .middle-blocks section.custom-blocks .custom-block-item img {
+        display: block;
+        width: 100%;
+        height: auto; }
+      @media (min-width: 768px) {
+        .middle-blocks section.custom-blocks .custom-block-item:first-child h2::after, .middle-blocks section.custom-blocks .custom-block-item:first-child h3::after {
+          content: "";
+          display: block;
+          height: 0;
+          width: 0;
+          border-top: 0.875rem solid transparent;
+          border-bottom: 0.875rem solid transparent;
+          border-left: 0.875rem solid #000000;
+          display: inline-block;
+          vertical-align: middle;
+          margin-left: 0.9375rem; } }
+      .middle-blocks section.custom-blocks .custom-block-item:last-child {
+        display: block;
+        text-align: center; }
+        @media (min-width: 768px) {
+          .middle-blocks section.custom-blocks .custom-block-item:last-child {
+            width: 100%;
+            clear: both; }
+            .middle-blocks section.custom-blocks .custom-block-item:last-child h2::after, .middle-blocks section.custom-blocks .custom-block-item:last-child h3::after {
+              content: "";
+              display: block;
+              height: 0;
+              width: 0;
+              border-top: 0.875rem solid transparent;
+              border-right: 0.875rem solid #000000;
+              border-bottom: 0.875rem solid transparent;
+              display: inline-block;
+              vertical-align: middle;
+              margin-left: 0.9375rem; } }
+        .middle-blocks section.custom-blocks .custom-block-item:last-child h2 {
+          font-size: 45px;
+          font-size: 2.8125rem;
+          line-height: 1;
+          margin: 0; }
+        .middle-blocks section.custom-blocks .custom-block-item:last-child p {
+          font-family: "Playfair Display";
+          font-size: 18px;
+          font-size: 1.125rem;
+          display: block;
+          max-width: 37.5rem;
+          margin: 0 auto; }
+
+.block-top-content {
+  display: block;
+  text-align: center; }
+  .block-top-content h2 {
+    font-size: 45px;
+    font-size: 2.8125rem;
+    line-height: 1;
+    margin: 0; }
+  .block-top-content p {
+    font-family: "Playfair Display";
+    font-size: 18px;
+    font-size: 1.125rem;
+    display: block;
+    max-width: 37.5rem;
+    margin: 1.25rem auto; }
 
 body #main section.product-pod-loop {
   background-color: #F7F7F7;
