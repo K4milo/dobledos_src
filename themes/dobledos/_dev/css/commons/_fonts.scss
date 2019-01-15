@@ -1,0 +1,216 @@
+
+// Karla Font
+
+@font-face {
+    font-family: 'Karla';
+    src: url('../fonts/karla/Karla-Regular.woff2') format('woff2'),
+        url('../fonts/karla/Karla-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Karla';
+    src: url('../fonts/karla/Karla-BoldItalic.woff2') format('woff2'),
+        url('../fonts/karla/Karla-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Karla';
+    src: url('../fonts/karla/Karla-Bold.woff2') format('woff2'),
+        url('../fonts/karla/Karla-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Karla';
+    src: url('../fonts/karla/Karla-Italic.woff2') format('woff2'),
+        url('../fonts/karla/Karla-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+// Myriad Pro
+@font-face {
+    font-family: 'Myriad Pro';
+    src: url('../fonts/myriad/MyriadPro-It.woff2') format('woff2'),
+        url('../fonts/myriad/MyriadPro-It.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Myriad Pro';
+    src: url('../fonts/myriad/MyriadPro-Regular.woff2') format('woff2'),
+        url('../fonts/myriad/MyriadPro-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Myriad Pro';
+    src: url('../fonts/myriad/MyriadPro-Semibold.woff2') format('woff2'),
+        url('../fonts/myriad/MyriadPro-Semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Myriad Pro';
+    src: url('../fonts/myriad/MyriadPro-SemiboldIt.woff2') format('woff2'),
+        url('../fonts/myriad/MyriadPro-SemiboldIt.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Myriad Pro';
+    src: url('../fonts/myriad/MyriadPro-BoldCondIt.woff2') format('woff2'),
+        url('../fonts/myriad/MyriadPro-BoldCondIt.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Myriad Pro';
+    src: url('../fonts/myriad/MyriadPro-BoldIt.woff2') format('woff2'),
+        url('../fonts/myriad/MyriadPro-BoldIt.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Myriad Pro';
+    src: url('../fonts/myriad/MyriadPro-Bold.woff2') format('woff2'),
+        url('../fonts/myriad/MyriadPro-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Myriad Pro';
+    src: url('../fonts/myriad/MyriadPro-CondIt.woff2') format('woff2'),
+        url('../fonts/myriad/MyriadPro-CondIt.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Myriad Pro';
+    src: url('../fonts/myriad/MyriadPro-BoldCond.woff2') format('woff2'),
+        url('../fonts/myriad/MyriadPro-BoldCond.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Myriad Pro';
+    src: url('../fonts/myriad/MyriadPro-Cond.woff2') format('woff2'),
+        url('../fonts/myriad/MyriadPro-Cond.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+// PlayFair
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('../fonts/playfair/PlayfairDisplay-Italic.woff2') format('woff2'),
+        url('../fonts/playfair/PlayfairDisplay-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Playfair Display SC';
+    src: url('../fonts/playfair/PlayfairDisplaySC-Black.woff2') format('woff2'),
+        url('../fonts/playfair/PlayfairDisplaySC-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Playfair Display SC';
+    src: url('../fonts/playfair/PlayfairDisplaySC-Bold.woff2') format('woff2'),
+        url('../fonts/playfair/PlayfairDisplaySC-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Playfair Display SC';
+    src: url('../fonts/playfair/PlayfairDisplaySC-BlackItalic.woff2') format('woff2'),
+        url('../fonts/playfair/PlayfairDisplaySC-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('../fonts/playfair/PlayfairDisplay-Regular.woff2') format('woff2'),
+        url('../fonts/playfair/PlayfairDisplay-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('../fonts/playfair/PlayfairDisplay-Black.woff2') format('woff2'),
+        url('../fonts/playfair/PlayfairDisplay-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('../fonts/playfair/PlayfairDisplay-Bold.woff2') format('woff2'),
+        url('../fonts/playfair/PlayfairDisplay-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Playfair Display SC';
+    src: url('../fonts/playfair/PlayfairDisplaySC-Italic.woff2') format('woff2'),
+        url('../fonts/playfair/PlayfairDisplaySC-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('../fonts/playfair/PlayfairDisplay-BlackItalic.woff2') format('woff2'),
+        url('../fonts/playfair/PlayfairDisplay-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Playfair Display SC';
+    src: url('../fonts/playfair/PlayfairDisplaySC-BoldItalic.woff2') format('woff2'),
+        url('../fonts/playfair/PlayfairDisplaySC-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('../fonts/playfair/PlayfairDisplay-BoldItalic.woff2') format('woff2'),
+        url('../fonts/playfair/PlayfairDisplay-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Playfair Display SC';
+    src: url('../fonts/playfair/PlayfairDisplaySC-Regular.woff2') format('woff2'),
+        url('../fonts/playfair/PlayfairDisplaySC-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+

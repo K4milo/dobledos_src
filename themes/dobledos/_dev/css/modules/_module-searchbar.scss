@@ -1,0 +1,34 @@
+.main-search {
+	display: none;
+	padding: rem(20px);
+	background-color: $gray;
+	form {
+		background-color: $white;
+		border: 1px solid $grayBd;
+		width: 90%;
+		height: rem(45px);
+		max-width: rem(800px);
+		display: block;
+		margin: 0 auto;
+		position: relative;
+		overflow: hidden;
+		input {
+			&[type="text"] {
+				width: 100%;
+				height: rem(45px);
+				padding: 0 rem(25px);
+				border: none;
+			}
+		}
+		button {
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: rem(45px);
+			height: rem(45px);
+			background: transparent;
+			border: none;
+			font-size: rem(25px);
+		}
+	}
+}

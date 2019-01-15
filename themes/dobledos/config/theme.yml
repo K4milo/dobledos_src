@@ -1,0 +1,8 @@
+name: dobledos
+display_name: Doble Dos
+parent: classic
+version: 1.0.0
+author:
+  name: "PrestaShop Team"
+  email: "pub@prestashop.com"
+  url: "http://www.prestashop.com"

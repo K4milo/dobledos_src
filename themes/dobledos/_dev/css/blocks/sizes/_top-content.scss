@@ -1,0 +1,16 @@
+.block-top-content {
+	display: block;
+	text-align: center;
+	h2 {
+		@include font(45px);
+		line-height: 1;
+		margin: 0;
+	}
+	p {
+		font-family: $play;
+		@include font(18px);
+		display: block;
+		max-width: rem(600px);
+		margin: rem(20px) auto;
+	}
+}

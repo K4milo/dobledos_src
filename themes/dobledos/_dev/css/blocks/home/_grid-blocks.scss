@@ -1,0 +1,40 @@
+body {
+	&.page-index {
+		section {
+			&.custom-blocks {
+				@include mq(sm){
+					display: flex;
+				}
+				.custom-block-item {
+					display: block;
+					width: 100%;
+					text-align: center;
+					@include mq(sm){
+						width: 50%;
+					}
+					h2,
+					h3 {
+						display: block;
+						position: relative;
+						padding: rem(22px);
+						@include font(25px);
+						margin: 0;
+						@include mq(sm){
+							@include font(40px);
+						}
+					}
+					p {
+						font-family: $play;
+						@include font(20px);
+						margin: 0 0 0 0;
+					}
+					img {
+						display: block;
+						width: 100%;
+						height: auto;
+					}
+				}
+			}
+		}
+	}
+}

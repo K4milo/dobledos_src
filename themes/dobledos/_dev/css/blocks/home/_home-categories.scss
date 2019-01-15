@@ -1,0 +1,52 @@
+body {
+	&.page-index {
+		ul {
+			&.parent-three {
+				padding: 0 0 0 0;
+				.parent-three-cat {
+					display: none;
+				}
+
+				// Wrapper list
+				.childs {
+					ul {
+						padding: 0;
+						width: 100%;
+						margin: 0 auto;
+						li {
+							&.thumb-category {
+								position: relative;
+								display: block;
+								width: 100%;
+								height: auto;
+								@include mq('md') {
+									display: inline-block;
+									vertical-align: top;
+									width: 23%;
+									margin: 1%;
+								}
+								figure {
+									margin: 0 0 0 0;
+									img {
+										display: block;
+										width: 100%;
+										height: auto;
+									}
+								}
+		
+								a {
+									&.thumb-btn {
+										text-transform: uppercase;
+										@include btnOpBlack(rem(15px), rem(22px), rem(20px)); 
+										@include center('both');
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
