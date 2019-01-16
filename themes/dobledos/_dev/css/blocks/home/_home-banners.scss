@@ -1,32 +1,39 @@
-.row-banner {
-	display: block;
-	text-align: center;
-	h2 {
-		@include font(45px);
-		line-height: 1;
-		margin: 0;
-	}
-	p {
-		font-family: $play;
-		@include font(18px);
-		display: block;
-		max-width: rem(600px);
-		margin: rem(20px) auto;
-	}
-	
-	// Simple white banner
-	&.row-banner--white {
-		background-color: $white;
-		padding: rem(20px) 0;
-	}
-	// Image block
-	&.row-banner--bg-photo {
-		background-color: $black;
-		background-image: url('../img/bgs/bg-block-home.jpg');
-		padding: rem(105px) 0;
-		@include bgparallax;
-		h2, p {
-			color: $white;
+#custom-text { 
+	.row {
+		&.row-banner {
+			display: block;
+			text-align: center;
+			h2 {
+				@include font(45px);
+				line-height: 1;
+				margin: 0;
+			}
+			p {
+				font-family: $play;
+				@include font(18px);
+				display: block;
+				max-width: rem(600px);
+				margin: rem(20px) auto;
+			}
+			
+			// Simple white banner
+			&.row-banner--white {
+				background-color: $white;
+				padding: rem(20px) 0;
+			}
+			// Image block
+			&.row-banner--bg-photo {
+				background-color: $black;
+				background-image: url('../img/bgs/bg-block-home.jpg');
+				padding: rem(65px) 0;
+				@include bgparallax;
+				h2, p {
+					color: $white;
+				}
+				@include mq('md') {
+					padding: rem(105px) 0;	
+				}
+			}
 		}
 	}
 }

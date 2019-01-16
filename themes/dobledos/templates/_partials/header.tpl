@@ -66,7 +66,7 @@
 
   {block name='header_nav'}
     <div class="header-nav">
-      {hook h='displayNav'}
+      {hook h='displayNav2'}
     </div>
   {/block}
 

@@ -1,52 +1,32 @@
 body {
 	#main {
 		section {
-			&.product-pod-loop {
+			&.featured-products {
 				background-color: $grayLt;
 				padding: rem(15px) 0;
 				text-align: center;
-				> a {
-					@include btnBlack(rem(10px), rem(20px), rem(18px));
-					text-decoration: none;
-					margin: rem(22px) auto;
+
+				a {
+					&.all-product-link {
+						@include btnBlack(rem(10px), rem(20px), rem(18px));
+						text-decoration: none;
+						margin: rem(22px) auto;
+					}					
 				}
 				.products {
-					display: block;
 					text-align: center;
-					.product-miniature {
-						display: block;
-						text-align: center;
-						width: 90%;
-						margin: rem(10px) auto;
-						@include mq(md){
-							width: 23%;
-							max-width: 320px;
-							display: inline-block;
-							vertical-align: top;
-							margin: 1%;
-						}
-						a {
-							&.product-thumbnail {
-								display: block;
-								text-align: center;
-								img {
-									max-width: 100%;
-									height: auto;
-									display: inline-block;
+					max-width: rem(1117px);
+					margin: 0 auto;
+					.product-miniature {												
+						.thumbnail-container {
+							background: transparent;
+							box-shadow: none;
+							h3 {
+								&.h3 {
+									text-align: center;
+									color: $black;
+									@include font(25px);
 								}
-							}
-						}
-						h1 {
-							&.h2 {
-								text-align: center;
-								color: $black;
-								@include font(25px);
-							}
-						}
-						ul {
-							padding: rem(10px);
-							li {
-								display: block;
 							}
 						}
 					}

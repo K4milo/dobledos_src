@@ -1760,8 +1760,8 @@ var $scopes = {
   // Scripts for Slider
 
   homeSlider: function homeSlider() {
-    this.$sliderWrapper = $('.homeslider-container');
-    this.$sliderItems = this.$sliderWrapper.find('.slide');
+    this.$sliderWrapper = $('.carousel-inner');
+    this.$sliderItems = this.$sliderWrapper.find('.carousel-item');
 
     this.$sliderItems.each(function (index, el) {
       var instance = $(this),
