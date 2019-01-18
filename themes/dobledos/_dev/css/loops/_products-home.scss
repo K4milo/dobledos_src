@@ -5,12 +5,18 @@ body {
 				background-color: $grayLt;
 				padding: rem(15px) 0;
 				text-align: center;
-
+				h2 {
+					@include font(35px);
+					@include mq('sm'){
+						@include font(50px);
+					}
+				}
 				a {
 					&.all-product-link {
 						@include btnBlack(rem(10px), rem(20px), rem(18px));
 						text-decoration: none;
 						margin: rem(22px) auto;
+						float: none !important;
 					}					
 				}
 				.products {

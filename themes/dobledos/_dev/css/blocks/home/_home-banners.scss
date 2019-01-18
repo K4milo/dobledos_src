@@ -3,6 +3,7 @@
 		&.row-banner {
 			display: block;
 			text-align: center;
+			margin: 0 0 0 0;
 			h2 {
 				@include font(45px);
 				line-height: 1;
@@ -19,7 +20,7 @@
 			// Simple white banner
 			&.row-banner--white {
 				background-color: $white;
-				padding: rem(20px) 0;
+				padding: rem(70px) 0;
 			}
 			// Image block
 			&.row-banner--bg-photo {

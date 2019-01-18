@@ -1765,7 +1765,7 @@ var $scopes = {
 
     this.$sliderItems.each(function (index, el) {
       var instance = $(this),
-          image = instance.find('a > img'),
+          image = instance.find('figure img'),
           image_src = image.attr('src');
 
       instance.css('background-image', 'url(' + image_src + ')');

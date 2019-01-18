@@ -66,7 +66,7 @@ header {
 
 			// Menu
 			.navigation {
-				display: block;
+				display: none;
 				text-align: center;
 				position: relative;
 				@include mq('md'){
@@ -86,20 +86,21 @@ header {
 								display: inline-block;
 								width: auto;
 							}
-							a {
+							> a {
 								padding: rem(5px) rem(15px);
 								display: block;
 								font-weight: bold;
+								text-transform: uppercase;
+								&:hover {
+									background-color: $grayLt;
+								}
 							}
 							div {
 								border: none;
 								background-color: $op_white;
 								li {
 									a {
-										background-color: $op_white;
-										&:hover {
-											background-color: $gray;
-										}
+										background-color: transparent; 
 									}
 								}
 							}
