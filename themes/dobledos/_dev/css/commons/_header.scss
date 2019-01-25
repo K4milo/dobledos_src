@@ -17,6 +17,7 @@ header {
 		// Second bar navigation
 		.main-navigation {
 			padding: rem(10px) 0;
+			border-bottom: rem(2px) solid $gray;
 			// branding
 			a {
 				&.logo {

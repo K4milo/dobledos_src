@@ -15,6 +15,12 @@
 					width: 50%;
 					float: left;
 				}
+				> div {
+					max-width: rem(520px);
+					margin: 0 auto;
+					padding: rem(40px) 0;
+					text-align: center;
+				}
 				h2,
 				h3 {
 					display: block;
@@ -23,13 +29,17 @@
 					@include font(25px);
 					margin: 0;
 					@include mq(sm){
-						@include font(40px);
+						@include font(45px);
 					}
 				}
 				p {
 					font-family: $play;
 					@include font(20px);
 					margin: 0 0 0 0;
+					@include mq(sm){
+						@include font(28px);
+						line-height: 1.4;
+					}
 				}
 				img {
 					display: block;
@@ -49,22 +59,25 @@
 						}
 					}
 				}
+				&:nth-child(2){
+					h2,h3 {
+						&::before {
+							content:"";
+							@include arrow('left', $black, rem(14px));
+							display: inline-block;
+							vertical-align: middle;
+							margin-right: rem(15px);
+						}
+					}
+				}
 				&:last-child {
 					@include mq(sm){
 						width: 100%;
-						clear: both;
-						h2,h3 {
-							&::after {
-								content:"";
-								@include arrow('left', $black, rem(14px));
-								display: inline-block;
-								vertical-align: middle;
-								margin-left: rem(15px);
-							}
-						}
+						clear: both;						
 					}
 					display: block;
 					text-align: center;
+					padding: rem(40px) 0;
 					h2 {
 						@include font(45px);
 						line-height: 1;
@@ -72,10 +85,14 @@
 					}
 					p {
 						font-family: $play;
-						@include font(18px);
+						@include font(20px);
 						display: block;
 						max-width: rem(600px);
 						margin: 0 auto;
+						@include mq(sm){
+							@include font(28px);
+							line-height: 1.4;
+						}
 					}
 				}
 			}

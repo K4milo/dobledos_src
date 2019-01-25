@@ -16,6 +16,7 @@ body {
 						@include btnBlack(rem(10px), rem(20px), rem(18px));
 						text-decoration: none;
 						margin: rem(22px) auto;
+						text-transform: uppercase;
 						float: none !important;
 					}					
 				}

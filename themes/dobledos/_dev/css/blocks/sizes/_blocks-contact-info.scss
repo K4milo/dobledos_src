@@ -5,6 +5,19 @@
 		overflow: hidden;
 		color: $white;
 	}
+	
+	.contact-form  {
+		h3 {
+			text-align: center;
+			padding: rem(22px);
+			margin: rem(14px) 0;
+			@include font(25px);				
+			@include mq(sm){
+				@include font(45px);
+			}
+		}
+	}
+
 	> section {
 		// General section
 		display: block;
@@ -23,6 +36,10 @@
 				display: block;
 				max-width: rem(600px);
 				margin: rem(20px) auto;
+				@include mq(sm){
+					@include font(28px);
+					line-height: 1.4;
+				}
 			}
 			a {
 				display: inline-block;
