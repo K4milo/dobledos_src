@@ -1,0 +1,31 @@
+body {
+	&.cms-id-8 {
+		section {
+			// Reset layout
+			&#wrapper{
+				> .container {
+					float: none;
+					clear: both;
+					margin: 0 0 0 0;
+					padding: 0 0 0 0;
+					width: 100%;
+					max-width: 100%;
+					> .row {
+						float: none;
+						clear: both;
+						margin: 0 0 0 0;
+						padding: 0 0 0 0;
+						width: 100%;
+						max-width: 100%;
+					}
+				}
+				#custom-text {
+					padding: 0 0 0 0;
+				}
+				.breadcrumb {
+					display: none;
+				}
+			}
+		}
+	}
+}
