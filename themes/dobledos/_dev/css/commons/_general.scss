@@ -13,4 +13,13 @@ body {
 		transition: all 0.3s;
 		color: $black;
 	}
+
+	// Hide Category block
+	.block-category {
+		&.card {
+			&.card-block {
+				display: none;
+			}
+		}
+	}
 }

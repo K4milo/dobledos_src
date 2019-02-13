@@ -19,6 +19,9 @@ body {
 								display: block;
 								width: 100%;
 								height: auto;
+								&:last-child {
+									display: none;
+								}
 								@include mq('md') {
 									display: inline-block;
 									vertical-align: top;
