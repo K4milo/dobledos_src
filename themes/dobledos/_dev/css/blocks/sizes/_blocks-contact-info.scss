@@ -13,7 +13,7 @@
 			margin: rem(14px) 0;
 			@include font(25px);				
 			@include mq(sm){
-				@include font(45px);
+				@include font(35px);
 			}
 		}
 	}
@@ -32,12 +32,13 @@
 			text-align: center;
 			p {
 				font-family: $play;
-				@include font(20px);
+				@include font(16px);
 				display: block;
 				max-width: rem(600px);
 				margin: rem(20px) auto;
+				color: $black;
 				@include mq(sm){
-					@include font(28px);
+					@include font(20px);
 					line-height: 1.4;
 				}
 			}

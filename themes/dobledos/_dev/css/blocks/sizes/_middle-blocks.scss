@@ -29,15 +29,16 @@
 					@include font(25px);
 					margin: 0;
 					@include mq(sm){
-						@include font(45px);
+						@include font(35px);
 					}
 				}
 				p {
 					font-family: $play;
-					@include font(20px);
+					@include font(16px);
 					margin: 0 0 0 0;
+					color: block;
 					@include mq(sm){
-						@include font(28px);
+						@include font(20px);
 						line-height: 1.4;
 					}
 				}

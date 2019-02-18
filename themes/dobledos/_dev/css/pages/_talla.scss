@@ -1,5 +1,17 @@
 body {
 	&.cms-id-7 {
+		// Reset layout
+		.page-content {
+			&.page-cms {
+				margin: 0 0 0 0;
+				padding: 0 0 0 0;
+			}
+		}
+		header {
+			&.page-header {
+				display: none;
+			}
+		}
 		section {
 			// Reset layout
 			&#wrapper{
