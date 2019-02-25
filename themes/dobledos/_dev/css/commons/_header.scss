@@ -8,12 +8,12 @@ header {
 				margin: 0 0 0 0;
 				text-align: center;
 				@include mq('sm'){
-					text-align: left;
+				//text-align: left;
 					padding: rem(5px) rem(10px);
 				}
 			}
 		}
-		
+
 		// Second bar navigation
 		.main-navigation {
 			padding: rem(10px) 0;
@@ -116,13 +116,13 @@ header {
 										float: none;
 										a {
 											padding: rem(12px);
-											background-color: transparent; 
+											background-color: transparent;
 											&:hover {
 												background-color: $grayLt;
 											}
 										}
 									}
-								}								
+								}
 							}
 						}
 					}
@@ -141,7 +141,7 @@ header {
 				display: inline-block;
 				vertical-align: middle;
 				margin: 0 rem(10px);
-				
+
 				#_desktop_cart {
 					display: inline-block;
 					vertical-align: middle;
@@ -149,7 +149,7 @@ header {
 						float: none;
 						clear: both;
 						.header {
-							border: none;							
+							border: none;
 							.hidden-sm-down {
 								display: none;
 							}
