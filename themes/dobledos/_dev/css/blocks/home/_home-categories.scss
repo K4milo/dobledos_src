@@ -25,7 +25,7 @@ body {
 								@include mq('md') {
 									display: inline-block;
 									vertical-align: top;
-									width: 23%;
+									width: 48%;
 									margin: 1%;
 								}
 								figure {
@@ -36,11 +36,11 @@ body {
 										height: auto;
 									}
 								}
-		
+
 								a {
 									&.thumb-btn {
 										text-transform: uppercase;
-										@include btnOpBlack(rem(15px), rem(22px), rem(20px)); 
+										@include btnOpBlack(rem(15px), rem(22px), rem(40px));
 										@include center('both');
 									}
 								}
@@ -52,4 +52,3 @@ body {
 		}
 	}
 }
-

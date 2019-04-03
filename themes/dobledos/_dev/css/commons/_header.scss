@@ -8,7 +8,7 @@ header {
 				margin: 0 0 0 0;
 				text-align: center;
 				@include mq('sm'){
-				//text-align: left;
+				  text-align: center;
 					padding: rem(5px) rem(10px);
 				}
 			}

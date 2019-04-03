@@ -23,7 +23,7 @@ $product-description-height: 70px;
     height: 318px;
     width: $thumbnail-size;
     background: white;
-    @include box-shadow;
+    //@include box-shadow;
     &:hover, &:focus {
       .highlighted-informations {
         bottom: 5.5rem;
@@ -90,7 +90,7 @@ $product-description-height: 70px;
     text-align: center;
     width: $thumbnail-size;
     height: 3.125rem;
-    box-shadow: 0 -5px 10px -5px rgba(0, 0, 0, 0.2);
+    //box-shadow: 0 -5px 10px -5px rgba(0, 0, 0, 0.2);
     transition: bottom .3s;
     .quick-view {
       color: $gray;
