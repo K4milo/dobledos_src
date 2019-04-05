@@ -4,7 +4,7 @@ body {
 			&.featured-products {
 				background-color: $grayLt;
 				padding: rem(15px) 0;
-				text-align: center;
+				text-align: center;				
 				h2 {
 					@include font(35px);
 					@include mq('sm'){
@@ -22,9 +22,14 @@ body {
 				}
 				.products {
 					text-align: center;
-					max-width: rem(1117px);
 					margin: 0 auto;
-					.product-miniature {												
+					@include mq('md'){
+						justify-content: center;
+					}
+					.product-miniature {
+						@include mq('md'){
+							max-width: 18%;
+						}												
 						.thumbnail-container {
 							background: transparent;
 							box-shadow: none;

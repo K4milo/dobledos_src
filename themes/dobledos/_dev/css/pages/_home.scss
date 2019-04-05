@@ -45,6 +45,7 @@ body {
 			}
 
 			&.custom-blocks {
+				padding: rem(30px) rem(20px);
 				@include mq(sm){
 					display: flex;
 				}
@@ -66,32 +67,16 @@ body {
 							@include font(40px);
 						}
 					}
-					
-					h2 {
-						&::after {
-							content:"";
-							@include arrow('right', $black, rem(14px));
-							display: inline-block;
-							vertical-align: middle;
-							margin-left: rem(15px);
-						}
-					}
-
-					h3 {
-						&::before {
-							content: "";
-							@include arrow('left', $black, rem(14px));
-							display: inline-block;
-							vertical-align: middle;
-							margin-right: rem(15px);
-						}
-					}
 
 					p {
 						font-family: $play;
 						@include font(20px);
 						margin: 0 0 0 0;
+						a {
+							font-family: $karla;
+						}
 					}
+
 					img {
 						display: block;
 						width: 100%;

@@ -7,7 +7,7 @@
 	section {
 		&.custom-blocks {
 			overflow: hidden;
-			padding: 2%;
+			width: 100%;
 			.custom-block-item {
 				display: block;
 				width: 100%;
@@ -17,12 +17,16 @@
 					float: left;
 					padding: 1%;
 				}
-				> div {
-					max-width: rem(520px);
-					margin: 0 auto;
-					padding: rem(40px) 0;
-					text-align: center;
+
+				.block--item {
+					&-size {
+						padding-bottom: rem(30px);
+						@include mq(md){
+							padding: 0 rem(20px) rem(30px);
+						}
+					}
 				}
+				
 				h2,
 				h3 {
 					display: block;
@@ -31,15 +35,18 @@
 					@include font(25px);
 					margin: 0;
 					@include mq(sm){
-						@include font(35px);
+						@include font(55px);
 					}
 				}
 				p {
 					font-family: $play;
 					@include font(16px);
 					margin: 0 0 0 0;
-					color: block;
+					color: $black;
 					@include mq(sm){
+						display: block;
+						margin: rem(15px) auto;
+						max-width: rem(600px);
 						@include font(20px);
 						line-height: 1.4;
 					}
@@ -54,7 +61,7 @@
 						h2,h3 {
 							&::after {
 								content:"";
-								@include arrow('right', $black, rem(14px));
+								// @include arrow('right', $black, rem(14px));
 								display: inline-block;
 								vertical-align: middle;
 								margin-left: rem(15px);
@@ -66,7 +73,7 @@
 					h2,h3 {
 						&::before {
 							content:"";
-							@include arrow('left', $black, rem(14px));
+							// @include arrow('left', $black, rem(14px));
 							display: inline-block;
 							vertical-align: middle;
 							margin-right: rem(15px);
@@ -88,7 +95,7 @@
 					}
 					p {
 						font-family: $play;
-						@include font(20px);
+						@include font(23px);
 						display: block;
 						max-width: rem(600px);
 						margin: 0 auto;
