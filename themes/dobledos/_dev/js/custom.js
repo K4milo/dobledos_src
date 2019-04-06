@@ -4,6 +4,7 @@
 
  			this.menuScripts();
  			this.homeSlider();
+ 			this.scrollScripts();
  		},
 
  		// scripts for Menu
@@ -16,6 +17,20 @@
  		menu_toggledSearch: function(event) {
  			this.$searchToggle = $('.main-search');
 			this.$searchToggle.slideToggle('slow');
+		},
+
+		scrollScripts: function() { 
+			$(window).scroll(function() {
+
+				let scroll    = $(window).scrollTop();
+				let header_el = $('.main-navigation');
+
+				if (scroll >= 100) {
+					header_el.addClass("scroll_fixed");
+				} else {
+					header_el.removeClass("scroll_fixed");
+				}
+			});
 		},
 
 		// Scripts for Slider

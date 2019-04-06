@@ -16,8 +16,17 @@ header {
 
 		// Second bar navigation
 		.main-navigation {
-			padding: rem(10px) 0;
+			padding: 0;
 			border-bottom: rem(2px) solid $gray;
+			transition: all 0.3s;
+			&.scroll_fixed {
+				position: fixed;
+				top: 0;
+				left: 0;
+				width: 100%;
+				background-color: $white;
+				z-index: 100;
+			}
 			// branding
 			a {
 				&.logo {
@@ -80,6 +89,8 @@ header {
 					float: none;
 					clear: both;
 					> ul {
+						margin: 0 0 0 0;
+						padding: 0 0 0 0;
 						> li  {
 							display: block;
 							width: 100%;
@@ -88,7 +99,7 @@ header {
 								width: auto;
 							}
 							> a {
-								padding: rem(5px) rem(15px);
+								padding: rem(26px) rem(15px);
 								display: block;
 								font-weight: bold;
 								text-transform: uppercase;
