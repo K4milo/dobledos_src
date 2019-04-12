@@ -11,7 +11,7 @@
 			text-align: center;
 			padding: rem(22px);
 			margin: rem(14px) 0;
-			@include font(25px);				
+			@include font(20px);				
 			@include mq(sm){
 				@include font(35px);
 			}
@@ -38,7 +38,7 @@
 				margin: rem(20px) auto;
 				color: $black;
 				@include mq(sm){
-					@include font(20px);
+					@include font(18px);
 					line-height: 1.4;
 				}
 			}
@@ -53,14 +53,17 @@
 			header {
 				text-align: center;
 				h1 {
-					@include font(30px);
+					@include font(20px);
 					text-transform: uppercase;
 					line-height: 1;
 					margin: 0;
+					@include mq(sm){
+						@include font(35px);
+					}
 				}
 				p {
 					font-family: $play;
-					@include font(20px);
+					@include font(18px);
 					display: block;
 					max-width: rem(600px);
 					margin: rem(20px) auto;

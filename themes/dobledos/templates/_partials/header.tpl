@@ -30,7 +30,7 @@
 
 {block name='header_copy'}
 <div class="top-bar-copy">
-  <p>ENVÍOS NACIONALES GRATIS POR COMPRAS SUPERIORES A $200.000 PESOS COP</p>
+  <p>ENVÍOS NACIONALES GRATIS POR COMPRAS SUPERIORES A $300.000 PESOS COP</p>
 </div>
 {/block}
 

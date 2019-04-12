@@ -6,9 +6,9 @@ body {
 				padding: rem(15px) 0;
 				text-align: center;				
 				h2 {
-					@include font(35px);
+					@include font(20px);
 					@include mq('sm'){
-						@include font(50px);
+						@include font(35px);
 					}
 				}
 				a {

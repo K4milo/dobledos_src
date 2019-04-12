@@ -44,9 +44,12 @@ body {
 					h1 {
 						text-align: center;
 						display: inline-block;
-						@include font(45px);
+						@include font(20px);
 						color: $black;
 						line-height: 1;
+						@include mq(sm){
+							@include font(35px);
+						}
 					}
 				}
 			}

@@ -6,11 +6,11 @@
 		padding: rem(30px) 0;
 	}
 	h2 {
-		@include font(35px);
+		@include font(20px);
 		line-height: 1;
 		margin: 0;
 		@include mq(sm) {
-			@include font(55px);
+			@include font(35px);
 		}
 	}
 	p {
@@ -20,7 +20,7 @@
 		margin: rem(20px) auto;
 		@include font(16px);
 		@include mq(sm) {
-			@include font(20px);
+			@include font(18px);
 			line-height: 1.4;
 		}
 	}

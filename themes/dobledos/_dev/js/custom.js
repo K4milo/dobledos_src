@@ -12,6 +12,12 @@
  		menuScripts: function() {
  			this.$search = $('.search-btn');
  			this.$search.on('click', this.menu_toggledSearch);
+
+ 			// Apopend new links to menu
+ 			this.$menuWrapper = $('.sub-menu.js-sub-menu > ul');
+ 			this.$menuWrapper.append('<li><a href="/novedades" class="dropdown-submenu">Nuevas Colecciones</a></li><li><a href="/pagina/12-ventas-corporativas" class="dropdown-submenu">Ventas Corporativas</a></li>');
+ 			$('.featured-products h2.products-section-title.text-uppercase').html('Productos Destacados');
+
  		},
 
  		menu_toggledSearch: function(event) {

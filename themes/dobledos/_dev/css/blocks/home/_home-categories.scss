@@ -40,7 +40,8 @@ body {
 								a {
 									&.thumb-btn {
 										text-transform: uppercase;
-										@include btnOpBlack(rem(15px), rem(22px), rem(40px));
+										@include btnOpBlack(rem(15px), rem(32px), rem(34px));
+										font-family: $karla;
 										@include center('both');
 									}
 								}

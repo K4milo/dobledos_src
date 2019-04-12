@@ -19,10 +19,10 @@ body {
 						display: block;
 						position: relative;
 						padding: rem(22px);
-						@include font(25px);
+						@include font(20px);
 						margin: 0;
 						@include mq(sm){
-							@include font(40px);
+							@include font(35px);
 						}
 					}
 					p {

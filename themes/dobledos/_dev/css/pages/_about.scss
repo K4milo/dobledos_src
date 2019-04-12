@@ -90,11 +90,11 @@ body {
 				h3 {
 					font-family: $karla;
 					font-weight: bold;
-					@include font(35px);
+					@include font(20px);
 					margin-bottom: rem(16px);
 					display: inline-block;
 					@include mq('md') {
-						@include font(50px);
+						@include font(35px);
 					}
 				}
 				p {

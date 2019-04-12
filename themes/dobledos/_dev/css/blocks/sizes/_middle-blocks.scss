@@ -32,10 +32,10 @@
 					display: block;
 					position: relative;
 					padding: rem(22px);
-					@include font(25px);
+					@include font(20px);
 					margin: 0;
 					@include mq(sm){
-						@include font(55px);
+						@include font(35px);
 					}
 				}
 				p {
@@ -47,7 +47,6 @@
 						display: block;
 						margin: rem(15px) auto;
 						max-width: rem(600px);
-						@include font(20px);
 						line-height: 1.4;
 					}
 				}
@@ -89,9 +88,12 @@
 					text-align: center;
 					padding: rem(40px) 0;
 					h2 {
-						@include font(45px);
+						@include font(20px);
 						line-height: 1;
 						margin: 0;
+						@include mq(sm){
+							@include font(35px);
+						}
 					}
 					p {
 						font-family: $play;

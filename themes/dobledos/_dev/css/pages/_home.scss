@@ -37,9 +37,12 @@ body {
 					h1 {
 						text-align: center;
 						display: inline-block;
-						@include font(45px);
+						@include font(20px);
 						color: $black;
 						line-height: 1;
+						@include mq(sm){
+							@include font(35px);
+						}
 					}
 				}
 			}
@@ -70,8 +73,11 @@ body {
 
 					p {
 						font-family: $play;
-						@include font(20px);
+						@include font(16px);
 						margin: 0 0 0 0;
+						@include mq(sm){
+							@include font(20px);
+						}
 						a {
 							font-family: $karla;
 						}
