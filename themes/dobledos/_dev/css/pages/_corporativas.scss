@@ -1,0 +1,99 @@
+body {
+	&.cms-id-12 {
+		// Reset layout
+		.page-content {
+			&.page-cms {
+				margin: 0 auto;
+				padding: 0 0 0 0;
+			}
+		}
+		header {
+			&.page-header {
+				display: none;
+			}
+		}
+		section {
+			// Reset layout
+			&#wrapper {
+				> .container {
+					float: none;
+					clear: both;
+					margin: 0 0 0 0;
+					padding: 0 0 0 0;
+					width: 100%;
+					max-width: 100%;
+					> .row {
+						float: none;
+						clear: both;
+						margin: 0 0 0 0;
+						padding: 0 0 0 0;
+						width: 100%;
+						max-width: 100%;
+					}
+				}
+				#custom-text {
+					padding: 0 0 0 0;
+				}
+				.breadcrumb {
+					display: none;
+				}
+			}
+
+			// Wrapper contact
+			&.page-sales {
+				> div {
+					@include mq(md){
+						display: flex;
+						flex-wrap: wrap;
+						justify-content: center;
+					}
+					.contact-sale  {
+						padding: rem(15px);
+						text-align: center;
+						@include mq(md){
+							width: 50%;
+						}
+						img {
+							width: 100%;
+							height: auto;
+						}
+						h3 {
+							text-transform: uppercase;
+							@include font(20px);
+							@include mq(md){
+								margin-top: rem(85px);
+								@include font(35px);
+							}
+						}
+						p {
+							@include font(16px);
+							@include mq(md){
+								@include font(20px);
+							}	
+						}
+					}
+				}
+			}
+
+			&.form-wrapper-sales {
+				@include bgcover;
+				background-image: url('../img/bgs/bg-corporates.jpg');
+			}
+
+			&.contact-form {
+				max-width: rem(750px);
+				margin: 0 auto;
+				padding: rem(60px) rem(20px);
+				text-align: left;
+				background-color: $white;
+				h3 {
+					text-align: center;
+					@include font(20px);
+					@include mq(md){
+						@include font(35px);
+					}
+				}
+			}
+		}
+	}
+}
