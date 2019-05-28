@@ -23,11 +23,10 @@
 *  International Registered Trademark & Property of PrestaShop SA
 *}
 
-{block name="page_title"}
-  {l s='Customer service - Contact us' d='Modules.Contactform.Shop'}
-{/block}
-
-<section class="login-form">
+<section class="login-form contact-form">
+  {block name="page_title"}
+    <h3>{l s='Customer service - Contact us' d='Modules.Contactform.Shop'}</h3>
+  {/block}
   <form action="{$urls.pages.contact}" method="post" {if $contact.allow_file_upload}enctype="multipart/form-data"{/if}>
 
     <header>

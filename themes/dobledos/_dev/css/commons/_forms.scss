@@ -3,11 +3,16 @@ form {
 	position: relative;
 	text-align: left;
 	.form-fields {
+		text-align: left;
 		> label {
 			display: block;
 			margin: 15px 0;
 			> span {
 				display: block;
+				@include font(17px);
+				text-transform: uppercase;
+				text-align: left;
+				line-height: 1.5;
 			}
 			select {
 				display: block;

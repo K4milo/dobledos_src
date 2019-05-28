@@ -79,7 +79,8 @@ body {
 				@include bgcover;
 				background-image: url('../img/bgs/bg-corporates.jpg');
 			}
-
+			
+			&.login-form,
 			&.contact-form {
 				max-width: rem(750px);
 				margin: 0 auto;

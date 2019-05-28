@@ -24,99 +24,102 @@
 *}
 
 {extends file="helpers/form/form.tpl"}
+{if isset($input)}
 
-{block name="label"}
-    {if $input.type == 'html_blocks'}
+    {block name="label"}
+        {if $input.type == 'html_blocks'}
 
-    {else}
-        {$smarty.block.parent}
-    {/if}
-{/block}
+        {else}
+            {$smarty.block.parent}
+        {/if}
+    {/block}
 
-{block name="legend"}
-    <h3>
-        {if isset($field.image)}<img src="{$field.image}" alt="{$field.title|escape:'html':'UTF-8'}" />{/if}
-        {if isset($field.icon)}<i class="{$field.icon}"></i>{/if}
-        {$field.title}
-        <span class="panel-heading-action">
-            {foreach from=$toolbar_btn item=btn key=k}
-                {if $k != 'modules-list' && $k != 'back'}
-                    <a id="desc-{$table}-{if isset($btn.imgclass)}{$btn.imgclass}{else}{$k}{/if}" class="list-toolbar-btn" {if isset($btn.href)}href="{$btn.href}"{/if} {if isset($btn.target) && $btn.target}target="_blank"{/if}{if isset($btn.js) && $btn.js}onclick="{$btn.js}"{/if}>
-                        <span title="" data-toggle="tooltip" class="label-tooltip" data-original-title="{l s=$btn.desc}" data-html="true">
-                            <i class="process-icon-{if isset($btn.imgclass)}{$btn.imgclass}{else}{$k}{/if} {if isset($btn.class)}{$btn.class}{/if}" ></i>
-                        </span>
-                    </a>
-                {/if}
-            {/foreach}
-            </span>
-    </h3>
-{/block}
+    {block name="legend"}
+        <h3>
+            {if isset($field.image)}<img src="{$field.image}" alt="{$field.title|escape:'html':'UTF-8'}" />{/if}
+            {if isset($field.icon)}<i class="{$field.icon}"></i>{/if}
+            {$field.title}
+            <span class="panel-heading-action">
+                {foreach from=$toolbar_btn item=btn key=k}
+                    {if $k != 'modules-list' && $k != 'back'}
+                        <a id="desc-{$table}-{if isset($btn.imgclass)}{$btn.imgclass}{else}{$k}{/if}" class="list-toolbar-btn" {if isset($btn.href)}href="{$btn.href}"{/if} {if isset($btn.target) && $btn.target}target="_blank"{/if}{if isset($btn.js) && $btn.js}onclick="{$btn.js}"{/if}>
+                            <span title="" data-toggle="tooltip" class="label-tooltip" data-original-title="{l s=$btn.desc}" data-html="true">
+                                <i class="process-icon-{if isset($btn.imgclass)}{$btn.imgclass}{else}{$k}{/if} {if isset($btn.class)}{$btn.class}{/if}" ></i>
+                            </span>
+                        </a>
+                    {/if}
+                {/foreach}
+                </span>
+        </h3>
+    {/block}
 
-{block name="input_row"}
-    {if $input.type == 'html_blocks'}
-        <div class="row">
-            <script type="text/javascript">
-                var come_from = '{$name_controller}';
-                var token = '{$token}';
-                var alternate = 1;
-            </script>
-            {foreach $input.values as $key => $html_blocks_position name='blocksLoop'}
-                <div class="col-lg-6">
-                    <div class="panel">
-                        <div class="panel-heading">
-                            {$html_blocks_position.hook_name}
-                             <small>{$html_blocks_position.hook_title}</small>
-                        </div>
-                        <table class="table tableDnD cms" id="html_block_{$key%2}">
-                            <thead>
-                                <tr class="nodrag nodrop">
-                                    <th>{l s='ID' d='Modules.HTMLBlocks.Admin'}</th>
-                                    <th>{l s='Position' d='Modules.HTMLBlocks.Admin'}</th>
-                                    <th>{l s='Name of the block' d='Modules.HTMLBlocks.Admin'}</th>
-                                    <th></th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                {foreach $html_blocks_position.blocks as $html_block}
-                                    <tr class="{if $key%2}alt_row{else}not_alt_row{/if} row_hover" id="tr_{$key%2}_{$html_block['id_html_block']}_{$html_block['position']}">
-                                        <td>{$html_block['id_html_block']}</td>
-                                        <td class="center pointer dragHandle" id="td_{$key%2}_{$html_block['id_html_block']}">
-                                            <div class="dragGroup">
-                                                <div class="positions">
-                                                    {$html_block['position'] + 1}
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td>{$html_block['block_name']}</td>
-                                        <td>
-                                            <div class="btn-group-action">
-                                                <div class="btn-group pull-right">
-                                                    <a class="btn btn-default" href="{$current}&amp;edit{$identifier}&amp;id_html_block={(int)$html_block['id_html_block']}" title="{l s='Edit' d='Modules.HTMLBlocks.Admin'}">
-                                                        <i class="icon-edit"></i> {l s='Edit' d='Modules.HTMLBlocks.Admin'}
-                                                    </a>
-                                                    <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-                                                        <i class="icon-caret-down"></i>&nbsp;
-                                                    </button>
-                                                    <ul class="dropdown-menu">
-                                                    <li>
-                                                        <a href="{$current}&amp;delete{$identifier}&amp;id_html_block={(int)$html_block['id_html_block']}" title="{l s='Delete' d='Modules.HTMLBlocks.Admin'}">
-                                                            <i class="icon-trash"></i> {l s='Delete' d='Modules.HTMLBlocks.Admin'}
-                                                        </a>
-                                                    </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </td>
+    {block name="input_row"}
+        {if $input.type == 'html_blocks'}
+            <div class="row">
+                <script type="text/javascript">
+                    var come_from = '{$name_controller}';
+                    var token = '{$token}';
+                    var alternate = 1;
+                </script>
+                {foreach $input.values as $key => $html_blocks_position name='blocksLoop'}
+                    <div class="col-lg-6">
+                        <div class="panel">
+                            <div class="panel-heading">
+                                {$html_blocks_position.hook_name}
+                                 <small>{$html_blocks_position.hook_title}</small>
+                            </div>
+                            <table class="table tableDnD cms" id="html_block_{$key%2}">
+                                <thead>
+                                    <tr class="nodrag nodrop">
+                                        <th>{l s='ID' d='Modules.HTMLBlocks.Admin'}</th>
+                                        <th>{l s='Position' d='Modules.HTMLBlocks.Admin'}</th>
+                                        <th>{l s='Name of the block' d='Modules.HTMLBlocks.Admin'}</th>
+                                        <th></th>
                                     </tr>
-                                {/foreach}
-                            </tbody>
-                        </table>
+                                </thead>
+                                <tbody>
+                                    {foreach $html_blocks_position.blocks as $html_block}
+                                        <tr class="{if $key%2}alt_row{else}not_alt_row{/if} row_hover" id="tr_{$key%2}_{$html_block['id_html_block']}_{$html_block['position']}">
+                                            <td>{$html_block['id_html_block']}</td>
+                                            <td class="center pointer dragHandle" id="td_{$key%2}_{$html_block['id_html_block']}">
+                                                <div class="dragGroup">
+                                                    <div class="positions">
+                                                        {$html_block['position'] + 1}
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>{$html_block['block_name']}</td>
+                                            <td>
+                                                <div class="btn-group-action">
+                                                    <div class="btn-group pull-right">
+                                                        <a class="btn btn-default" href="{$current}&amp;edit{$identifier}&amp;id_html_block={(int)$html_block['id_html_block']}" title="{l s='Edit' d='Modules.HTMLBlocks.Admin'}">
+                                                            <i class="icon-edit"></i> {l s='Edit' d='Modules.HTMLBlocks.Admin'}
+                                                        </a>
+                                                        <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                                            <i class="icon-caret-down"></i>&nbsp;
+                                                        </button>
+                                                        <ul class="dropdown-menu">
+                                                        <li>
+                                                            <a href="{$current}&amp;delete{$identifier}&amp;id_html_block={(int)$html_block['id_html_block']}" title="{l s='Delete' d='Modules.HTMLBlocks.Admin'}">
+                                                                <i class="icon-trash"></i> {l s='Delete' d='Modules.HTMLBlocks.Admin'}
+                                                            </a>
+                                                        </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    {/foreach}
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
-                </div>
-                {if $smarty.foreach.blocksLoop.index%2}<div class="clearfix"></div>{/if}
-            {/foreach}
-        </div>
-    {else}
-        {$smarty.block.parent}
-    {/if}
-{/block}
+                    {if $smarty.foreach.blocksLoop.index%2}<div class="clearfix"></div>{/if}
+                {/foreach}
+            </div>
+        {else}
+            {$smarty.block.parent}
+        {/if}
+    {/block}
+
+{/if}
