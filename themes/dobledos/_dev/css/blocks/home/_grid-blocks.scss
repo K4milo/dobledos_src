@@ -1,49 +1,49 @@
-body {
-	&.page-index {
-		section {
-			&.custom-blocks {
-				@include mq(sm){
-					display: flex;
-				}
-				.custom-block-item {
-					display: block;
-					width: 100%;
-					text-align: center;
-					padding: rem(20px);
-					@include mq(sm){
-						width: 50%;
-						padding: 0 rem(30px);
-					}
-					h2,
-					h3 {
-						display: block;
-						position: relative;
-						padding: rem(22px);
-						@include font(20px);
-						margin: 0;
-						@include mq(sm){
-							@include font(35px);
-						}
-					}
-					p {
-						font-family: $play;
-						@include font(20px);
-						margin: 0 0 0 0;
-					}
-					img {
-						display: block;
-						width: 100%;
-						height: auto;
-					}
-					a {
-						display: inline-block;
-						text-transform: uppercase;
-						margin-top: rem(40px);
-						@include btnBlack(rem(10px), rem(20px), rem(20px));
-						font-family: $karla;
-					}
-				}
+.blocks-home {
+	display: block;
+	text-align: center;
+	padding: rem(20px) 0;
+	@include mq(sm){
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+	}
+	&--item {
+		display: block;
+		width: 100%;
+		text-align: center;
+		padding: rem(20px);
+		@include mq(sm){
+			width: 50%;
+			padding: 0 rem(30px);
+		}
+		h2,
+		h3 {
+			display: block;
+			position: relative;
+			padding: rem(22px);
+			@include font(20px);
+			margin: 0;
+			@include mq(sm){
+				@include font(35px);
 			}
+		}
+		p {
+			font-family: $play;
+			@include font(20px);
+			margin: 0 0 0 0;
+		}
+		img {
+			display: block;
+			width: 100%;
+			height: auto;
+		}
+		a {
+			display: inline-block;
+			text-transform: uppercase;
+			margin-top: rem(40px);
+			@include btnBlack(rem(10px), rem(20px), rem(20px));
+			font-family: $karla;
 		}
 	}
 }
+		

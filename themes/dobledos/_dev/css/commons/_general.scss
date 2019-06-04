@@ -26,4 +26,27 @@ body {
 			}
 		}
 	}
+
+	header {
+		&.page-header {
+			padding: rem(14px) 0;
+			text-align: center;
+			h1 {
+				font-family: $play-sc;
+				font-weight: bold;
+				font-size: 35px;
+			}
+		}
+	}
+
+	#wrapper {
+		padding: rem(50px) 0;
+	}
+	
+	&.page-index,
+	&.cms-id-9 {
+		#wrapper {
+			padding: inherit;
+		}
+	}
 }
