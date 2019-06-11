@@ -186,6 +186,14 @@
                         aria-controls="extra-{$extraKey}">{$extra.title}</a>
                     </li>
                   {/foreach}
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      data-toggle="tab"
+                      href="#guides"
+                      role="tab"
+                      aria-controls="extra-{$extraKey}">Guía de Tallas</a>
+                  </li>
                 </ul>
 
                 <div class="tab-content" id="tab-content">
@@ -223,8 +231,33 @@
                    {$extra.content nofilter}
                  </div>
                  {/foreach}
+
+                 <div class="tab-pane fade in" id="guides" role="tabpanel">
+                    <figure class="product-sizes--guide">
+                      <a data-toggle="modal" data-target="#mySizes" href="#mySizes">
+                        <img src="/img/cms/sizes-guideline.jpg" width="100%" alt="Guía de tallas">
+                      </a>
+                    </figure>
+                 </div>
               </div>  
             </div>
+
+            <!--Modal guide sizes-->
+
+            <div class="modal fade" id="mySizes" role="dialog">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Guía de Tallas</h4>
+                  </div>
+                  <div class="modal-body">
+                    <img src="/img/cms/sizes-guideline.jpg" width="100%" alt="Guía de tallas">
+                  </div>
+                </div>
+              </div>
+            </div>
+            
           {/block}
         </div>
       </div>
