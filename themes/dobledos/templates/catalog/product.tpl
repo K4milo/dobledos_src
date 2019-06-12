@@ -105,6 +105,7 @@
 
                   {block name='product_variants'}
                     {include file='catalog/_partials/product-variants.tpl'}
+                    <a data-toggle="modal" data-target="#mySizes" class="btn btn btn-sizes btn-primary">Ver Guía de tallas</a>
                   {/block}
 
                   {block name='product_pack'}
@@ -186,14 +187,6 @@
                         aria-controls="extra-{$extraKey}">{$extra.title}</a>
                     </li>
                   {/foreach}
-                  <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      data-toggle="tab"
-                      href="#guides"
-                      role="tab"
-                      aria-controls="extra-{$extraKey}">Guía de Tallas</a>
-                  </li>
                 </ul>
 
                 <div class="tab-content" id="tab-content">
@@ -231,14 +224,6 @@
                    {$extra.content nofilter}
                  </div>
                  {/foreach}
-
-                 <div class="tab-pane fade in" id="guides" role="tabpanel">
-                    <figure class="product-sizes--guide">
-                      <a data-toggle="modal" data-target="#mySizes" href="#mySizes">
-                        <img src="/img/cms/sizes-guideline.jpg" width="100%" alt="Guía de tallas">
-                      </a>
-                    </figure>
-                 </div>
               </div>  
             </div>
 
