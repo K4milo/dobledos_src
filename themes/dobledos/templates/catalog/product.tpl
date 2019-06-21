@@ -105,7 +105,7 @@
 
                   {block name='product_variants'}
                     {include file='catalog/_partials/product-variants.tpl'}
-                    <a data-toggle="modal" data-target="#mySizes" class="btn btn btn-sizes btn-primary">Ver Guía de tallas</a>
+                    <a href="#mySizes" data-toggle="modal" data-target="#mySizes" class="sizes-lk">¿Sabes cúal es tu talla?</a>
                   {/block}
 
                   {block name='product_pack'}
