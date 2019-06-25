@@ -1675,6 +1675,12 @@ var TopMenu = (function (_DropDown) {
 
       var elmId = undefined;
       var self = this;
+      var parentMenu = (0, _jquery2['default'])('.menu > ul > li#category-2 > a');
+
+      if (parentMenu.length) {
+        parentMenu.attr('href', '/2-camisas');
+      }
+
       this.el.find('li').hover(function (e) {
         if (_this.el.parent().hasClass('mobile')) {
           return;

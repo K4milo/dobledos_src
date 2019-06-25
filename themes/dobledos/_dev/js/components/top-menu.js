@@ -29,6 +29,12 @@ export default class TopMenu extends DropDown {
   init() {
     let elmId;
     let self = this;
+    let parentMenu = $('.menu > ul > li#category-2 > a');
+
+    if(parentMenu.length) {
+      parentMenu.attr('href','/2-camisas');
+    }
+
     this.el.find('li').hover((e) => {
       if (this.el.parent().hasClass('mobile')) {
         return;

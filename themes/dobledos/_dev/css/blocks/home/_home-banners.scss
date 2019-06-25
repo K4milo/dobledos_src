@@ -9,7 +9,7 @@
 				line-height: 1;
 				margin: 0;
 				@include mq(sm){
-					@include font(35px);
+					@include font(45px);
 				}
 			}
 			p {
@@ -18,6 +18,9 @@
 				display: block;
 				max-width: rem(600px);
 				margin: rem(20px) auto;
+				@include mq(sm){
+					@include font(20px);
+				}
 			}
 			
 			// Simple white banner

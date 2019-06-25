@@ -1,5 +1,43 @@
 footer {
 	&#footer {
-		margin-top: rem(20px);
+		margin-top: rem(40px);
+
+		// Hide notes footer
+		#footer_account_list {
+			li {
+				&:nth-child(3){
+					display: none;
+				}
+			}
+		}
+
+		// block social
+		ul {
+			&.isocial {
+				li {
+					a {
+						display: block;
+						float: none;
+						width: 35px;
+						height: 35px;
+						border-radius: 100%;
+						background-position: center;
+						background-color: $black;
+						background-size: 65%;
+						background-repeat: no-repeat;
+						margin: 0 10px;
+						&.twitter{
+							background-image: url('../img/svg/twitter.svg');
+						}
+						&.instagram{
+							background-image: url('../img/svg/instagram-logo-white.svg');
+						}
+						&.facebook{
+							background-image: url('../img/svg/facebook-logo-white.svg');
+						}
+					}
+				}
+			}
+		}
 	}
 }
