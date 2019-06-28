@@ -189,6 +189,9 @@
          {l s='Optional' d='Shop.Forms.Labels'}
         {/if}
       {/block}
+      {if $field.name === 'postcode'}        
+        <span class="form-control-comment-zipcode">¿Conoces tu código postal? si no es así ingresa <a href="http://visor.codigopostal.gov.co/472/visor/" target="_blank">Aquí</a></span>
+      {/if}
     </div>
   </div>
 

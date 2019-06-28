@@ -71,8 +71,7 @@ body {
 						}
 					}
 
-					p {
-						font-family: $play;
+					p {						
 						@include font(16px);
 						margin: 0 0 0 0;
 						@include mq(sm){

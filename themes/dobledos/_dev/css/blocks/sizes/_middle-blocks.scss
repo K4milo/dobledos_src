@@ -39,11 +39,11 @@
 					}
 				}
 				p {
-					font-family: $play;
 					@include font(16px);
 					margin: 0 0 0 0;
 					color: $black;
 					@include mq(sm){
+						@include font(20px);
 						display: block;
 						margin: rem(15px) auto;
 						max-width: rem(600px);

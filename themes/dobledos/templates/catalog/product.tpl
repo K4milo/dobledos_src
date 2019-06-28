@@ -81,6 +81,12 @@
               <h1 class="h1" itemprop="name">{block name='page_title'}{$product.name}{/block}</h1>
             {/block}
           {/block}
+          {if isset($product.reference_to_display) && $product.reference_to_display neq ''}
+            <div class="product-reference">
+              <label class="label">SKU:</label>
+              <span itemprop="sku">{$product.reference_to_display}</span>
+            </div>
+          {/if}
           {block name='product_prices'}
             {include file='catalog/_partials/product-prices.tpl'}
           {/block}

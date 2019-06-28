@@ -30,14 +30,13 @@
 				}
 
 				p {
-					font-family: $play;
 					@include font(16px);
 					display: block;
 					max-width: rem(600px);
 					margin: rem(20px) auto;
 					color: $black;
 					@include mq(sm){
-						@include font(18px);
+						@include font(20px);
 						line-height: 1.4;
 					}
 				}

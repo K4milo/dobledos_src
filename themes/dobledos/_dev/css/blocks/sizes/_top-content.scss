@@ -14,13 +14,12 @@
 		}
 	}
 	p {
-		font-family: $play;
 		display: block;
 		max-width: rem(1200px);
 		margin: rem(20px) auto;
 		@include font(16px);
 		@include mq(sm) {
-			@include font(18px);
+			@include font(20px);
 			line-height: 1.4;
 		}
 	}

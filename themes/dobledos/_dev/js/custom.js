@@ -5,6 +5,7 @@
  			this.menuScripts();
  			this.homeSlider();
  			this.scrollScripts();
+ 			this.contactScripts();
  		},
 
  		// scripts for Menu
@@ -53,6 +54,16 @@
 				instance.css('background-image','url('+ image_src +')');
 
 			});
+		},
+
+		contactScripts: function() {
+			if($('body').hasClass('page-contact')) {	
+				let formWrapper = $('section.page-content');
+
+				if(formWrapper.length > 0) {
+					formWrapper.find('h3').text('Contáctenos');
+				}
+			}			
 		},
  	}
  	

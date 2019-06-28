@@ -1750,6 +1750,7 @@ var $scopes = {
 		this.menuScripts();
 		this.homeSlider();
 		this.scrollScripts();
+		this.contactScripts();
 	},
 
 	// scripts for Menu
@@ -1796,6 +1797,16 @@ var $scopes = {
 
 			instance.css('background-image', 'url(' + image_src + ')');
 		});
+	},
+
+	contactScripts: function contactScripts() {
+		if ($('body').hasClass('page-contact')) {
+			var formWrapper = $('section.page-content');
+
+			if (formWrapper.length > 0) {
+				formWrapper.find('h3').text('Contáctenos');
+			}
+		}
 	}
 };
 
