@@ -41,11 +41,13 @@
 				p {
 					@include font(16px);
 					margin: 0 0 0 0;
+					padding: 0 rem(25px);
 					color: $black;
 					@include mq(sm){
 						@include font(20px);
 						display: block;
 						margin: rem(15px) auto;
+						padding: inherit;
 						max-width: rem(600px);
 						line-height: 1.4;
 					}

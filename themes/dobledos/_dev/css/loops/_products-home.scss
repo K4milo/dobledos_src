@@ -3,10 +3,22 @@ body {
 		section {
 			&.featured-products {
 				background-color: $grayLt;
-				padding: rem(15px) 0;
-				text-align: center;				
+				padding: rem(35px) 0;
+				text-align: center;	
+				display: block;
+				.products {
+					@include mq('sm'){
+						padding: rem(15px) 0;
+						display: flex;
+						flex-wrap: wrap;
+						justify-content: center;
+					}
+				}
+				
+
 				h2 {
 					@include font(20px);
+					padding: rem(12px) 0;
 					@include mq('sm'){
 						@include font(35px);
 					}
@@ -20,6 +32,21 @@ body {
 						float: none !important;
 					}					
 				}
+
+				// Navigation 
+				.slick-dots {
+					position: relative;
+					bottom: 0;
+					li {
+						background-color: $white;
+						border: 1px solid $grayLt;
+						box-shadow: 0 0 rem(12px) $gray;
+						&.slick-active {
+							background-color: $black;
+						}
+					}
+				}
+
 				.products {
 					text-align: center;
 					margin: 0 auto;
@@ -33,6 +60,7 @@ body {
 						.thumbnail-container {
 							background: transparent;
 							box-shadow: none;
+							margin: rem(20px) auto;
 							h3 {
 								&.h3 {
 									text-align: center;

@@ -74,7 +74,9 @@ body {
 					p {						
 						@include font(16px);
 						margin: 0 0 0 0;
+						padding: 0 rem(25px);
 						@include mq(sm){
+							padding: inherit;
 							@include font(20px);
 						}
 						a {

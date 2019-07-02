@@ -20,6 +20,10 @@ header {
 			padding: 0;
 			border-bottom: rem(2px) solid $gray;
 			transition: all 0.3s;
+			text-align: center;
+			@include mq('sm'){
+				text-align: left;
+			}
 			&.scroll_fixed {
 				position: fixed;
 				top: 0;
@@ -27,6 +31,10 @@ header {
 				width: 100%;
 				background-color: $white;
 				z-index: 100;
+				// Trigger mobile
+				.mobile-button {
+					top: rem(12px);
+				}
 			}
 			// branding
 			a {
@@ -43,31 +51,69 @@ header {
 					}
 
 					img {
-						max-width: 100%;
+						display: inline-block;
+						max-width: 70%;
 						height: auto;
+						@include mq('sm'){
+							max-width: 100%;
+						}
 					}
 				}
 			}
+
+			// General icons
+
+			i {
+				&.material-icons {
+					&.remove {
+						display: none;
+					}
+				}
+			}			
 
 			// Trigger mobile
 			.mobile-button {
 				background: transparent;
 				border: none;
-				width: rem(60px);
-				height: rem(60px);
+				width: rem(40px);
+				height: rem(40px);
+				position: absolute;
+				top: rem(68px);
+				left: rem(5px);
+				z-index: 20;
+				outline: none;
 				span {
 					display: block;
 					width: 80%;
 					height: rem(3px);
 					background-color: $black;
+					transition: all 0.4s;
 					&.bar-1 {
-						margin-top: rem(15px);
+						margin-top: rem(10px);
 					}
 					&.bar-2 {
-						margin: rem(10px) 0;
+						margin: rem(5px) 0;
 					}
 					&.bar-3 {
-						margin-bottom: rem(15px);
+						margin-bottom: rem(10px);
+					}
+				}
+				&.active-menu {
+					span {
+						position: absolute;						
+						left: 0;
+						&.bar-1 {
+							top: rem(9px);
+							transform: rotate(-45deg);
+						}
+						&.bar-2 {
+							top: rem(14px);
+							transform: rotate(45deg);
+						}
+						&.bar-3 {
+							top: rem(19px);
+							transform: rotate(45deg);	
+						}
 					}
 				}
 				@include mq('md'){
@@ -95,15 +141,22 @@ header {
 						> li  {
 							display: block;
 							width: 100%;
+							text-align: left;
 							@include mq('md'){
 								display: inline-block;
 								width: auto;
+								text-align: center;
 							}
 							> a {
-								padding: rem(26px) rem(15px);
+								padding: rem(10px);
 								display: block;
 								font-weight: bold;
 								text-transform: uppercase;
+								border-bottom: rem(1px) solid $gray;
+								@include mq('md'){
+									border: none;
+									padding: rem(26px) rem(15px);
+								}
 								&:hover {
 									background-color: $grayLt;
 								}
@@ -111,8 +164,9 @@ header {
 							.sub-menu,
 							div {
 								border: none;
-								background-color: $op_white;
+								background-color: $grayLt;
 								@include mq('md'){
+									background-color: $op_white;
 									min-width: rem(250px);
 									max-width: rem(250px);
 									text-align: center;
@@ -152,7 +206,10 @@ header {
 			.header-nav {
 				display: inline-block;
 				vertical-align: middle;
-				margin: 0 rem(10px);
+				margin: 0 0;
+				@include mq('md'){
+					margin: 0 rem(10px);
+				}
 
 				#_desktop_cart {
 					display: inline-block;

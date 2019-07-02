@@ -1677,7 +1677,7 @@ var TopMenu = (function (_DropDown) {
       var self = this;
       var parentMenu = (0, _jquery2['default'])('.menu > ul > li#category-2 > a');
 
-      if (parentMenu.length) {
+      if (parentMenu.length && (0, _jquery2['default'])(window).width() > 768) {
         parentMenu.attr('href', '/2-camisas');
       }
 
@@ -1749,6 +1749,7 @@ var $scopes = {
 
 		this.menuScripts();
 		this.homeSlider();
+		this.homeCarousel();
 		this.scrollScripts();
 		this.contactScripts();
 	},
@@ -1759,10 +1760,25 @@ var $scopes = {
 		this.$search = $('.search-btn');
 		this.$search.on('click', this.menu_toggledSearch);
 
-		// Apopend new links to menu
+		// Append new links to menu
 		this.$menuWrapper = $('.sub-menu.js-sub-menu > ul');
 		this.$menuWrapper.append('<li><a href="/pagina/12-ventas-corporativas" class="dropdown-submenu">Ventas Corporativas</a></li>');
 		$('.featured-products h2.products-section-title.text-uppercase').html('Productos Destacados');
+
+		// Mobile logic
+		var $button = $('button.mobile-button');
+		var $menuWrapper = $('.main-navigation .navigation');
+		var $menuWrapperInner = $menuWrapper.find('.menu.js-top-menu');
+
+		if ($(window).width() < 768) {
+			$button.on('click', function (event) {
+				event.preventDefault();
+
+				$button.toggleClass('active-menu');
+				$menuWrapper.toggle();
+				$menuWrapperInner.toggleClass('hidden-sm-down');
+			});
+		}
 	},
 
 	menu_toggledSearch: function menu_toggledSearch(event) {
@@ -1799,9 +1815,41 @@ var $scopes = {
 		});
 	},
 
+	homeCarousel: function homeCarousel() {
+		this.$carouselWrapper = $('.featured-products .products');
+
+		if (this.$carouselWrapper.length > 0) {
+
+			// slick on mobile
+
+			var slick_on_mobile = function slick_on_mobile(slider, settings) {
+				$(window).on('load resize', function () {
+					if ($(window).width() > 767) {
+						if (slider.hasClass('slick-initialized')) {
+							slider.slick('unslick');
+						}
+						return;
+					}
+					if (!slider.hasClass('slick-initialized')) {
+						return slider.slick(settings);
+					}
+				});
+			};
+
+			// slider
+			var $slick_slider = this.$carouselWrapper;
+			var settings_slider = {
+				dots: true,
+				arrows: false
+			};
+
+			slick_on_mobile($slick_slider, settings_slider);;
+		}
+	},
+
 	contactScripts: function contactScripts() {
-		if ($('body').hasClass('page-contact')) {
-			var formWrapper = $('section.page-content');
+		if ($('body').hasClass('page-contact') || $('body').hasClass('cms-id-7')) {
+			var formWrapper = $('section.page-content form');
 
 			if (formWrapper.length > 0) {
 				formWrapper.find('h3').text('Contáctenos');

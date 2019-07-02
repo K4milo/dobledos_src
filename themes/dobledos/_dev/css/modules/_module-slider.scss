@@ -20,20 +20,27 @@ body {
 		.carousel-inner {
 			position: relative;
 			width: 100%;
-			height: 100vh;
-			max-height: rem(700px);
+			height: 70vh;
+			min-height: rem(350px);
+			max-height: rem(700px);		
 			margin: 0 0 0 0;
 			padding: 0 0 0 0;
+			@include mq(sm){
+				height: 100vh;
+			}
 			.carousel-item {
 				position: relative;
 				width: 100%;
-				height: 100vh;
+				height: 70vh;
+				min-height: rem(350px);
 				max-height: rem(700px);
 				@include bgcover;
 				background-position: left top;
 				margin: 0 0 0 0;
 				padding: 0 0 0 0;
 				@include mq(sm){
+					height: 100vh;
+					max-height: rem(700px);
 					margin-top: -16px;
 				}			
 				figure {
@@ -68,9 +75,11 @@ body {
 					width: 100%;
 					max-width: inherit;
 					background-color: $op_black;
+					padding: rem(22px) rem(22px) rem(32px);
 					@include mq(sm){
 						@include center('vertical');
 						width: 35%;
+						padding: inherit;
 						bottom: unset;
 						left: unset;
 						right: 0;

@@ -4,6 +4,7 @@
 
  			this.menuScripts();
  			this.homeSlider();
+ 			this.homeCarousel();
  			this.scrollScripts();
  			this.contactScripts();
  		},
@@ -14,11 +15,25 @@
  			this.$search = $('.search-btn');
  			this.$search.on('click', this.menu_toggledSearch);
 
- 			// Apopend new links to menu
+ 			// Append new links to menu
  			this.$menuWrapper = $('.sub-menu.js-sub-menu > ul');
  			this.$menuWrapper.append('<li><a href="/pagina/12-ventas-corporativas" class="dropdown-submenu">Ventas Corporativas</a></li>');
  			$('.featured-products h2.products-section-title.text-uppercase').html('Productos Destacados');
 
+ 			// Mobile logic
+ 			let $button = $('button.mobile-button');
+ 			let $menuWrapper = $('.main-navigation .navigation');
+ 			let $menuWrapperInner = $menuWrapper.find('.menu.js-top-menu');
+
+ 			if($(window).width() < 768) {
+ 				$button.on('click', function(event) {
+ 					event.preventDefault();
+
+ 					$button.toggleClass('active-menu');
+ 					$menuWrapper.toggle();
+ 					$menuWrapperInner.toggleClass('hidden-sm-down');
+ 				});
+ 			}
  		},
 
  		menu_toggledSearch: function(event) {
@@ -56,9 +71,40 @@
 			});
 		},
 
+		homeCarousel: function() {
+			this.$carouselWrapper = $('.featured-products .products');
+
+			if(this.$carouselWrapper.length > 0) {
+				// slider
+				let $slick_slider = this.$carouselWrapper;
+				let settings_slider = {
+					dots: true,
+					arrows: false
+				}
+
+				slick_on_mobile( $slick_slider, settings_slider);
+
+				// slick on mobile
+				function slick_on_mobile(slider, settings){
+					$(window).on('load resize', function() {
+						if ($(window).width() > 767) {
+							if (slider.hasClass('slick-initialized')) {
+								slider.slick('unslick');
+							}
+							return
+						}
+						if (!slider.hasClass('slick-initialized')) {
+							return slider.slick(settings);
+						}
+					});
+				};
+			}
+
+		},
+
 		contactScripts: function() {
-			if($('body').hasClass('page-contact')) {	
-				let formWrapper = $('section.page-content');
+			if($('body').hasClass('page-contact') || $('body').hasClass('cms-id-7')) {	
+				let formWrapper = $('section.page-content form');
 
 				if(formWrapper.length > 0) {
 					formWrapper.find('h3').text('Contáctenos');

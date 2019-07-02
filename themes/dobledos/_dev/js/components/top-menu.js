@@ -31,7 +31,7 @@ export default class TopMenu extends DropDown {
     let self = this;
     let parentMenu = $('.menu > ul > li#category-2 > a');
 
-    if(parentMenu.length) {
+    if(parentMenu.length && $(window).width() > 768) {
       parentMenu.attr('href','/2-camisas');
     }
 

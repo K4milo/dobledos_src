@@ -7,8 +7,10 @@ body#checkout {
     margin-bottom: 0;
     @include box-shadow;
     .logo {
-      max-height: 4.375rem;
-      width: auto;
+      max-width: 60%;
+      height: auto;
+      padding: rem(20px);
+
     }
     #_desktop_contact_link{
       #contact-link {

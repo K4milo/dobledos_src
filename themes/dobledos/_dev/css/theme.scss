@@ -36,6 +36,8 @@
 @import "vendors/fontawesome/scss/solid";
 @import "vendors/fontawesome/scss/brands";
 
+@import "vendors/slick/slick";
+
 // Common Styles
 @import "commons/fonts";
 @import "commons/vars";
@@ -72,3 +74,4 @@
 
 // Loops
 @import "loops/products-home";
+@import "loops/products";
