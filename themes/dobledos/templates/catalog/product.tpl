@@ -74,6 +74,22 @@
             {/block}
           </section>
         {/block}
+
+        {block name='product_cares'}
+          {if $product.grouped_features}
+            <section class="product-cares">
+              <h3>Cuidados de Producto</h3>
+              <ul class="data-cares">
+                {foreach from=$product.grouped_features item=feature}
+                  {if $feature.id_feature == 8}
+                    <li class="value cat-{$feature.id_feature} care-{$feature.URL}"> {$feature.value|escape:'htmlall'|nl2br nofilter} </li>
+                  {/if}
+                {/foreach}
+              </ul>
+            </section>
+          {/if}
+        {/block}
+
         </div>
         <div class="col-md-6">
           {block name='page_header_container'}
@@ -113,6 +129,10 @@
                     {include file='catalog/_partials/product-variants.tpl'}
                     <a href="#mySizes" data-toggle="modal" data-target="#mySizes" class="sizes-lk">¿Sabes cúal es tu talla?</a>
                   {/block}
+
+                  <div class="product--know-sizes">
+                    <a href="https://www.youtube.com/watch?v=jwxMNDFkyBA" target="_blank" class="sizes-lk">Guía de tallas</a>
+                  </div>
 
                   {block name='product_pack'}
                     {if $packItems}
@@ -244,6 +264,8 @@
                   </div>
                   <div class="modal-body">
                     <img src="/img/cms/sizes-guideline.jpg" width="100%" alt="Guía de tallas">
+        
+                    <a href="https://www.youtube.com/watch?v=jwxMNDFkyBA" target="_blank" class="btn btn-primary add-to-cart">Videoguía de tallas</a>
                   </div>
                 </div>
               </div>

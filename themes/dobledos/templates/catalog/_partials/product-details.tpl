@@ -50,8 +50,10 @@
         <p class="h6">{l s='Data sheet' d='Shop.Theme.Catalog'}</p>
         <dl class="data-sheet">
           {foreach from=$product.grouped_features item=feature}
-            <dt class="name">{$feature.name}</dt>
-            <dd class="value">{$feature.value|escape:'htmlall'|nl2br nofilter}</dd>
+            {if $feature.id_feature != 8}
+              <dt class="name cat-{$feature.value|escape:'html':'UTF-8'|lower}">{$feature.name}</dt>
+              <dd class="value">{$feature.value|escape:'htmlall'|nl2br nofilter}</dd>
+            {/if}
           {/foreach}
         </dl>
       </section>
