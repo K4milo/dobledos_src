@@ -130,9 +130,7 @@
                     <a href="#mySizes" data-toggle="modal" data-target="#mySizes" class="sizes-lk">¿Sabes cúal es tu talla?</a>
                   {/block}
 
-                  <div class="product--know-sizes">
-                    <a href="https://www.youtube.com/watch?v=jwxMNDFkyBA" target="_blank" class="sizes-lk">Guía de tallas</a>
-                  </div>
+
 
                   {block name='product_pack'}
                     {if $packItems}
@@ -250,7 +248,7 @@
                    {$extra.content nofilter}
                  </div>
                  {/foreach}
-              </div>  
+              </div>
             </div>
 
             <!--Modal guide sizes-->
@@ -264,13 +262,13 @@
                   </div>
                   <div class="modal-body">
                     <img src="/img/cms/sizes-guideline.jpg" width="100%" alt="Guía de tallas">
-        
-                    <a href="https://www.youtube.com/watch?v=jwxMNDFkyBA" target="_blank" class="btn btn-primary add-to-cart">Videoguía de tallas</a>
+
+                    <a href="https://www.youtube.com/watch?v=jwxMNDFkyBA" target="_blank" class="btn btn-primary add-to-cart">Video guía de tallas</a>
                   </div>
                 </div>
               </div>
             </div>
-            
+
           {/block}
         </div>
       </div>
