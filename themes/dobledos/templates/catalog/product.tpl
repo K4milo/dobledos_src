@@ -81,8 +81,9 @@
               <h3>Cuidados de Producto</h3>
               <ul class="data-cares">
                 {foreach from=$product.grouped_features item=feature}
+                  {assign "valProd" $feature.value|escape:'htmlall'|nl2br }
                   {if $feature.id_feature == 8}
-                    <li class="value cat-{$feature.id_feature} care-{$feature.URL}"> {$feature.value|escape:'htmlall'|nl2br nofilter} </li>
+                    <li class="value cat-{$feature.id_feature} care-{$feature.URL}"> {$valProd nofilter} {$valProd|regex_replace:"<br>":"/li><li" nofilter} </li>
                   {/if}
                 {/foreach}
               </ul>
