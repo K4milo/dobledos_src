@@ -78,15 +78,17 @@
         {block name='product_cares'}
           {if $product.grouped_features}
             <section class="product-cares">
-              <h3>Cuidados de Producto</h3>
-              <ul class="data-cares">
-                {foreach from=$product.grouped_features item=feature}
-                  {assign "valProd" $feature.value|escape:'htmlall'|nl2br }
-                  {if $feature.id_feature == 8}
-                    <li class="value cat-{$feature.id_feature} care-{$feature.URL}"> {$valProd nofilter} {$valProd|regex_replace:"<br>":"/li><li" nofilter} </li>
-                  {/if}
-                {/foreach}
-              </ul>
+            
+              {foreach from=$product.grouped_features item=feature}
+                {assign "valProd" $feature.value|escape:'htmlall'|nl2br }
+                {if $feature.id_feature == 8}
+                  <h3>Cuidados de Producto</h3>
+                  <ul class="data-cares">
+                    <li>{$valProd|regex_replace:"<br>":"/li><li" nofilter}
+                  </ul>
+                {/if}
+              {/foreach}
+              
             </section>
           {/if}
         {/block}

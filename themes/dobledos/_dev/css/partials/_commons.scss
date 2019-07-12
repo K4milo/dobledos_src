@@ -30,18 +30,18 @@ p {
 }
 .color,
 .custom-checkbox input[type="checkbox"] + span.color {
-  width: 1.25rem;
-  height: 1.25rem;
-  display: inline-block;
-  margin: 0.3125rem;
-  @include box-shadow-light;
-  border: 1px solid rgba(0,0,0,0.05);
-  cursor: pointer;
-  background-size: contain;
-  &.active,
-  &:hover {
-    border: 2px solid $gray-darker;
-  }
+  // width: 1.25rem;
+  // height: 1.25rem;
+  // display: inline-block;
+  // margin: 0.3125rem;
+  // @include box-shadow-light;
+  // border: 1px solid rgba(0,0,0,0.05);
+  // cursor: pointer;
+  // background-size: contain;
+  // &.active,
+  // &:hover {
+  //   border: 2px solid $gray-darker;
+  // }
 }
 .facet-label {
   &.active,

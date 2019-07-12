@@ -7,6 +7,7 @@
  			this.homeCarousel();
  			this.scrollScripts();
  			this.contactScripts();
+ 			this.productScripts();
  		},
 
  		// scripts for Menu
@@ -110,6 +111,21 @@
 					formWrapper.find('h3').text('Contáctenos');
 				}
 			}			
+		},
+
+		// Product scripts
+		productScripts: function(){
+			let productCares = $('ul.data-cares li');
+
+			if(productCares.length > 0){
+				productCares.each(function(index, el) {
+					let $instanceCare = $(this);
+					let $instanceContent = $instanceCare.text();
+
+					$instanceCare.addClass($instanceContent.toLowerCase());
+					
+				});
+			}
 		},
  	}
  	

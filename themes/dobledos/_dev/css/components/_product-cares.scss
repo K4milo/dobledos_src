@@ -1,0 +1,49 @@
+.data-cares {
+	li {
+		padding: rem(10px);
+		position: relative;
+		border-bottom: rem(1px) solid $grayBd;
+		&::before {
+			content: "";
+			width: rem(25px);
+			height: rem(25px);
+			display: inline-block;
+			vertical-align: middle;
+		}
+		&.media{
+			&::before {
+				@include iconBg('../img/icons/plancha-media.svg');
+			}
+		}
+		&.secadora{
+			&::before {
+				@include iconBg('../img/icons/no-secadora.svg');
+			}
+		}
+		&.sol{
+			&::before {
+				@include iconBg('../img/icons/no-sol.svg');
+			}
+		}
+		&.blanqueador{
+			&::before {
+				@include iconBg('../img/icons/no-blanqueador.svg');
+			}
+		}
+		&.retorcer{
+			&::before {
+				@include iconBg('../img/icons/no-retorcer.svg');
+			}
+		}
+		&.planchar{
+			&::before {
+				@include iconBg('../img/icons/no-plancha.svg');
+			}
+		}
+		&.mano{
+			&::before {
+				@include iconBg('../img/icons/lavar-a-mano.svg');
+			}
+		}
+	}
+}

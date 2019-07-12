@@ -34,6 +34,16 @@ $browser-context: 16; // Default
   }
 }
 
+// Icon default use
+@mixin iconBg($path, $size: 100%){
+  background-image: url($path);
+  background-size: $size;
+  background-repeat: no-repeat;
+  background-position: center center;
+  text-indent: -999999px;
+  overflow: hidden;
+}
+
 // Define default font size
 @function rem($size) {
   $remSize: $size / 16px;
@@ -164,10 +174,10 @@ $browser-context: 16; // Default
 // Placeholders
 
 @mixin placeholder {
-  ::-webkit-input-placeholder {@content}
-  :-moz-placeholder           {@content}
-  ::-moz-placeholder          {@content}
-  :-ms-input-placeholder      {@content}  
+  &::-webkit-input-placeholder {@content}
+  &:-moz-placeholder           {@content}
+  &::-moz-placeholder          {@content}
+  &:-ms-input-placeholder      {@content}  
 }
 
 // MQS
