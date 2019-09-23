@@ -4,6 +4,9 @@
     max-width: 452px;
     margin: 0 auto;
   }
+.new.discount-percentage{
+  color: black;
+}
 }
 .product-price {
   color: $brand-primary;
@@ -78,7 +81,7 @@
         color: black;
       }
     }
-    &.add-to-cart {      
+    &.add-to-cart {
       line-height: inherit;
       padding-top: 0.625rem;
       .material-icons {
@@ -147,6 +150,7 @@
   }
 }
 .product-prices {
+
   margin-top: $medium-space;
 
   div {
@@ -166,6 +170,8 @@
       }
     }
   }
+
+
 }
 .product-discount {
   color: $gray;
@@ -176,8 +182,12 @@
   }
 }
 .has-discount {
+
   &.product-price, p {
     color: $brand-secondary;
+  }
+  .current-price span{
+    color: black;
   }
   .discount {
     background: $brand-secondary;
@@ -187,7 +197,8 @@
     font-size: $font-size-base;
     margin-left: $small-space;
     text-transform: uppercase;
-    display: inline-block;
+    display: none;
+
   }
 }
 .product-unit-price {
