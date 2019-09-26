@@ -1,4 +1,13 @@
 footer {
+	.off-fix{
+		display: none;
+
+		@include mq(xs){
+			text-align: right;
+			padding: 1%;
+			display: block;
+		}
+	}
 	&#footer {
 		margin-top: rem(40px);
 

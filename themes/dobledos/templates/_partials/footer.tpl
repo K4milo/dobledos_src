@@ -51,6 +51,9 @@
           {/block}
         </p>
       </div>
+      <div class="off-fix footer navbar-fixed-bottom ">
+        <a href="https://dobledos.com/57-destacado"><img src="https://dobledos.com/img/cms/mosca-dobledos.png" alt=""></a>
+      </div>
     </div>
   </div>
 </div>
