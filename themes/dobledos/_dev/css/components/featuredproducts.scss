@@ -136,10 +136,10 @@ $product-description-height: 70px;
       &.discount-percentage,
       &.discount-amount {
         z-index: 2;
-        background: $brand-secondary;
+        background-color: black;
       }
       &.on-sale{
-        background: $brand-secondary;
+        background: rgba(black,0.7);
         width: 100%;
         text-align: center;
         left:0;

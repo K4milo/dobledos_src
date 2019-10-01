@@ -1,4 +1,11 @@
 footer {
+	.navbar-fixed-bottom {
+		width: rem(150px);
+		height: rem(150px);
+		right: rem(10px);
+		bottom: rem(10px);
+		left: initial;
+	}
 	.off-fix{
 		display: none;
 
