@@ -239,6 +239,11 @@ header {
 					width: rem(40px);
 					height: rem(40px);
 					position: relative;
+					.user-info {
+						position: relative;
+						width: rem(40px);
+						height: rem(40px);
+					}
   					&::before {
 						@include faSolid($fa-var-user);
 						font-size: rem(20px);
