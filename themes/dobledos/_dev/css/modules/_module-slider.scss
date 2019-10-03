@@ -19,21 +19,16 @@ body {
 	
 		.carousel-inner {
 			position: relative;
-			width: 100%;
-			height: 70vh;
-			min-height: rem(350px);
-			max-height: rem(700px);		
+			width: 100%;				
 			margin: 0 0 0 0;
 			padding: 0 0 0 0;
 			@include mq(sm){
 				height: 100vh;
+				max-height: rem(700px);	
 			}
 			.carousel-item {
 				position: relative;
 				width: 100%;
-				height: 70vh;
-				min-height: rem(350px);
-				max-height: rem(700px);
 				@include bgcover;
 				background-position: left top;
 				margin: 0 0 0 0;
@@ -45,11 +40,21 @@ body {
 				}			
 				figure {
 					> img {
-						display: none;
+						display: block;
+						width: 100%;
+						height: auto;
+						@include mq(sm){
+							display: none;
+						}
 					}
 					> a {
 						> img {
-							display: none;
+							display: block;
+							max-width: 100%;
+							height: auto;
+							@include mq(sm){
+								display: none;
+							}
 						}
 					}
 				}
@@ -69,14 +74,17 @@ body {
 				// Caption image
 				.caption {					
 					display: block;
-					position: absolute;
+					position: relative;
+					margin: 0 0;
 					left: 0;
-					bottom: 0;
+					top: 0;
+					right: 0;
 					width: 100%;
 					max-width: inherit;
-					background-color: $op_black;
-					padding: rem(22px) rem(22px) rem(32px);
+					background-color: rgba($black,0.85);
+					padding: rem(52px) rem(22px) rem(32px);
 					@include mq(sm){
+						padding: rem(22px) rem(22px) rem(32px);
 						@include center('vertical');
 						width: 35%;
 						padding: inherit;
@@ -93,12 +101,19 @@ body {
 						}	
 					}
 
-					h3 {
+					h1, h3, h2, p {
 						color: $white;
 						text-decoration: none;
 						@include mq(sm){
 							color: $black;
 							@include font(40px);
+						}
+					}
+
+					h1 {
+						color: $white !important;
+						@include mq(sm){
+							color: $black !important;
 						}
 					}
 

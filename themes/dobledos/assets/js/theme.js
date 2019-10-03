@@ -1807,13 +1807,15 @@ var $scopes = {
 		this.$sliderWrapper = $('.carousel-inner');
 		this.$sliderItems = this.$sliderWrapper.find('.carousel-item');
 
-		this.$sliderItems.each(function (index, el) {
-			var instance = $(this),
-			    image = instance.find('figure img'),
-			    image_src = image.attr('src');
+		if ($(window).width() > 768) {
+			this.$sliderItems.each(function (index, el) {
+				var instance = $(this),
+				    image = instance.find('figure img'),
+				    image_src = image.attr('src');
 
-			instance.css('background-image', 'url(' + image_src + ')');
-		});
+				instance.css('background-image', 'url(' + image_src + ')');
+			});
+		}
 	},
 
 	homeCarousel: function homeCarousel() {
