@@ -30,7 +30,7 @@ body {
 				display: none;
 			}
 		}
-		
+
 		section {
 			// Reset layout
 			&#wrapper{
@@ -59,7 +59,7 @@ body {
 				}
 			}
 		}
-		
+
 		// Hero Banner
 		.hero-banner {
 			background-color: $black;
@@ -70,7 +70,7 @@ body {
 			height: rem(300px);
 			@include mq('md') {
 				height: rem(400px);
-				padding: rem(105px) 0;	
+				padding: rem(105px) 0;
 			}
 
 			img {
@@ -104,6 +104,10 @@ body {
 
 			&.banner-2 {
 				background-image: url('../img/bgs/bg-hilos.jpg');
+				@include mq('md') {
+					height: rem(400px);
+					padding: rem(57px) 0;	
+				}
 			}
 		}
 
@@ -128,7 +132,7 @@ body {
 			@include mq('md') {
 				display: flex;
 			}
-			
+
 			img {
 				width: 100%;
 				height: auto;
@@ -162,7 +166,7 @@ body {
 			}
 
 
-			&--about-1 { 
+			&--about-1 {
 				position: relative;
 				padding: 0 rem(10px);
 				@include mq('md') {
