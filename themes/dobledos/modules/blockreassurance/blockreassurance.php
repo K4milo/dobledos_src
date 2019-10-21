@@ -80,7 +80,7 @@ class Blockreassurance extends Module implements WidgetInterface
             CREATE TABLE IF NOT EXISTS `'._DB_PREFIX_.'reassurance_lang` (
                 `id_reassurance` INT UNSIGNED NOT NULL AUTO_INCREMENT,
                 `id_lang` int(10) unsigned NOT NULL ,
-                `text` VARCHAR(300) NOT NULL,
+                `text` VARCHAR(30000) NOT NULL,
                 PRIMARY KEY (`id_reassurance`, `id_lang`)
             ) ENGINE='._MYSQL_ENGINE_.' DEFAULT CHARSET=utf8 ;');
 

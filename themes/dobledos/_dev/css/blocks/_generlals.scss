@@ -1,0 +1,22 @@
+.block {
+	&--video {
+		padding: rem(40px) rem(20px);
+		h3 {
+			text-align: center;
+			display: block;
+			position: relative;
+			padding: rem(22px);
+			@include font(20px);
+			margin: 0;
+			@include mq(sm){
+				@include font(35px);
+			}
+		}
+
+		iframe {
+			@include mq(sm){
+				min-height: rem(540px);
+			}
+		}
+	}
+}

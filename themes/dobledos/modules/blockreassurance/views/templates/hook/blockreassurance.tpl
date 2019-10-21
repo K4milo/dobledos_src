@@ -43,7 +43,7 @@
 					    <a data-toggle="collapse" href="#collapse-{$element.id_reassurance}">
 					    	<img src="{$element.image}" alt="{$element.text|escape:'quotes'}" />
 					    	{if $element.id_reassurance == 1}
-					    		<span class="h6">Términos y condiciones</span>
+					    		<span class="h6">Políticas de Garantía</span>
 					    	{elseif $element.id_reassurance == 2}
 					    		<span class="h6">Políticas de Envío</span>
 					    	{else}
@@ -53,7 +53,10 @@
 					  </h4>
 					</div>
 					<div id="collapse-{$element.id_reassurance}" class="panel-collapse collapse">
-					  <div class="panel-body"><p>{$element.text}</p></div>
+					  <div class="panel-body">
+					  	<p>{$element.text}</p>
+					  	<a href="https://dobledos.com/img/cms/Pol%C3%ADticas%20de%20Doble%20Dos%20.pdf" target="_blank" class="btn black-btn btn-primary">Ver Más</a>
+					  </div>
 					</div>
 				</div>
 			{/foreach}

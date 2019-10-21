@@ -67,7 +67,7 @@ body {
 			@include bgparallax;
 			position: relative;
 			width: 100%;
-			height: rem(300px);
+			min-height: rem(300px);
 			@include mq('md') {
 				height: rem(400px);
 				padding: rem(105px) 0;

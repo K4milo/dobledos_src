@@ -23,4 +23,18 @@
 			line-height: 1.4;
 		}
 	}
+
+	&--parallax {
+		@include bgparallax;
+		padding: rem(65px) rem(20px);
+		background-image: url('../img/bgs/bg-block-sizes.jpg');
+		h2,p {
+			color: $white;
+		}
+		p {
+			display: block;
+			max-width: rem(550px);
+			margin: rem(16px) auto;
+		}
+	}
 }
