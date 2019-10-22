@@ -19,13 +19,11 @@ body {
 	
 		.carousel-inner {
 			position: relative;
-			width: 100%;				
+			width: 100%;
+			height: auto;				
 			margin: 0 0 0 0;
 			padding: 0 0 0 0;
-			@include mq(sm){
-				height: 100vh;
-				max-height: rem(700px);	
-			}
+			
 			.carousel-item {
 				position: relative;
 				width: 100%;
@@ -34,8 +32,6 @@ body {
 				margin: 0 0 0 0;
 				padding: 0 0 0 0;
 				@include mq(sm){
-					height: 100vh;
-					max-height: rem(700px);
 					margin-top: -16px;
 				}			
 				figure {
@@ -43,18 +39,12 @@ body {
 						display: block;
 						width: 100%;
 						height: auto;
-						@include mq(sm){
-							display: none;
-						}
 					}
 					> a {
 						> img {
 							display: block;
 							max-width: 100%;
 							height: auto;
-							@include mq(sm){
-								display: none;
-							}
 						}
 					}
 				}

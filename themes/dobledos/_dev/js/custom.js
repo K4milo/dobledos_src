@@ -61,7 +61,7 @@
 		homeSlider: function(){
 			this.$sliderWrapper = $('.carousel-inner');
 			this.$sliderItems = this.$sliderWrapper.find('.carousel-item');
-
+			/*
 			if($(window).width() > 768) {
 				this.$sliderItems.each(function(index, el) {
 					var instance  = $(this),
@@ -71,7 +71,7 @@
 					instance.css('background-image','url('+ image_src +')');
 
 				});
-			}
+			}*/
 		},
 
 		homeCarousel: function() {
