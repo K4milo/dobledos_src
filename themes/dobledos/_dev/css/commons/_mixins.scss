@@ -16,6 +16,12 @@ $browser-context: 16; // Default
   background-repeat: no-repeat;
 }
 
+@mixin wrapper {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+}
+
 @mixin bgparallax {
   background-attachment: fixed;
   background-size: cover;
@@ -46,6 +52,11 @@ $browser-context: 16; // Default
 
 // Define default font size
 @function rem($size) {
+  $remSize: $size / 16px;
+  @return $remSize * 1rem;
+}
+
+@function torem($size) {
   $remSize: $size / 16px;
   @return $remSize * 1rem;
 }

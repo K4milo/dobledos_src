@@ -45,6 +45,12 @@
       </section>
     {/block}
 
+    <section class="testimonials">
+      <div class="testimonials__wrapper">
+        {hook h='displayTestimonials'}
+      </div>
+    </section>
+
     {block name='page_footer_container'}
       <footer class="page-footer">
         {block name='page_footer'}

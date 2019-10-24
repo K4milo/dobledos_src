@@ -1,0 +1,136 @@
+.facets {
+
+	// General layout
+	&__color,
+	&__patrón {
+		.facet-label {
+			margin: torem(12px) 0;
+			&.active {
+				.texture,
+				.ps-shown-by-js {
+					border-color: $blue;
+				}
+				a.js-search-link {
+					color: $blue;
+					font-weight: bold;	
+				}				
+			}
+			a.js-search-link {
+				width: calc(100% - 80px) !important;
+			}
+		}
+		.custom-checkbox {
+			width: torem(30px);
+			height: torem(30px);
+			.texture,
+			.ps-shown-by-js {
+				width: torem(30px);
+				height: torem(30px);
+				border-radius: 100%;
+				i {
+					display: none;
+				}
+			}			
+		}
+	}
+	&__patrón {
+		&-item {
+			&__cuadros {
+				.ps-shown-by-js {
+					@include iconBg('../img/patterns/cuadros.svg');
+				}
+			}
+			&__estampado {
+				.texture {
+					@include iconBg('../img/patterns/estampados.svg');
+				}
+			}
+			&__rayas {
+				.ps-shown-by-js {
+					@include iconBg('../img/patterns/rayas.svg');
+				}
+			}
+			&__unicolor {
+				.ps-shown-by-js {
+					@include iconBg('../img/patterns/unicolor.svg');
+				}
+			}
+		}
+	}
+
+	&__color {
+		&-item {
+			&__amarillo {
+				.ps-shown-by-js {
+					@include iconBg('../img/colors/amarillo.svg');
+				}
+			}
+
+			&__azul {
+				.ps-shown-by-js {
+					@include iconBg('../img/colors/azul.svg');
+				}
+			}
+
+			&__blanco {
+				.ps-shown-by-js {
+					@include iconBg('../img/colors/blanco.svg');
+				}
+			}
+
+			&__gris {
+				.ps-shown-by-js {
+					@include iconBg('../img/colors/gris.svg');
+				}
+			}
+
+			&__marron {
+				.ps-shown-by-js {
+					@include iconBg('../img/colors/marron.svg');
+				}
+			}
+
+			&__morado {
+				.ps-shown-by-js {
+					@include iconBg('../img/colors/morado.svg');
+				}
+			}
+
+			&__multicolor {
+				.ps-shown-by-js {
+					@include iconBg('../img/colors/multicolor.svg');
+				}
+			}
+
+			&__naranja {
+				.ps-shown-by-js {
+					@include iconBg('../img/colors/naranja.svg');
+				}
+			}
+
+			&__negro {
+				.ps-shown-by-js {
+					@include iconBg('../img/colors/negro.svg');
+				}
+			}
+
+			&__rojo {
+				.ps-shown-by-js {
+					@include iconBg('../img/colors/rojo.svg');
+				}
+			}
+
+			&__rosa {
+				.ps-shown-by-js {
+					@include iconBg('../img/colors/rosa.svg');
+				}
+			}
+
+			&__verde {
+				.ps-shown-by-js {
+					@include iconBg('../img/colors/verde.svg');
+				}
+			}
+		}
+	}
+}

@@ -2,16 +2,15 @@ footer {
 	.navbar-fixed-bottom {
 		width: rem(150px);
 		height: rem(150px);
-		right: rem(10px);
-		bottom: rem(10px);
+		right: rem(13px);
+		bottom: rem(13px);
 		left: initial;
 	}
 	.off-fix{
 		display: none;
 
 		@include mq(xs){
-			text-align: right;
-			padding: 1%;
+			text-align: right;			
 			display: block;
 		}
 	}

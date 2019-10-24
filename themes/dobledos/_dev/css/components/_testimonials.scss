@@ -1,0 +1,48 @@
+.testimonials {
+	background-color: $black;
+	background-image: url('../img/patterns/colmena-pattern.png');
+	padding: rem(40px) rem(20px);
+	@include mq(md){
+		padding: rem(50px) rem(20px);
+	}
+
+	.slick-arrow {
+		z-index: 2;
+		&.slick-prev,
+		&.slick-next {
+			width: torem(14px);
+			height: torem(20px);
+			
+		}
+
+		&.slick-prev {			
+			@include iconBg('../img/icons/prev.svg');			
+		}
+
+		&.slick-next {			
+			@include iconBg('../img/icons/next.svg');			
+		}
+	}
+
+	&__wrapper {
+		@include wrapper;
+		max-width: rem(800px);
+		color: $white;
+		border-top: rem(2px) solid;
+		border-bottom: rem(2px) solid;
+		padding: rem(20px) 0; 
+	}
+
+	.block-html {
+		&__item {
+			text-align: center;
+			p {
+				color: $white;
+				line-height: normal;
+				@include mq(md){
+					font-size: torem(30px);
+				}
+			}
+		}
+	}
+}

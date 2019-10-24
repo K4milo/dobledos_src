@@ -52,7 +52,7 @@
         </p>
       </div>
       <div class="off-fix footer navbar-fixed-bottom ">
-        <a href="https://dobledos.com/57-destacado"><img src="https://dobledos.com/img/cms/mosca-dobledos.png" alt=""></a>
+        <a href="https://dobledos.com/57-destacado"><img src="https://dobledos.com/img/cms/mosca-01.png" alt=""></a>
       </div>
     </div>
   </div>

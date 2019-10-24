@@ -27,6 +27,7 @@ import 'bootstrap/dist/js/bootstrap.min';
 import 'flexibility';
 import 'bootstrap-touchspin';
 
+import './slick';
 import './responsive';
 import './checkout';
 import './customer';
@@ -34,6 +35,7 @@ import './listing';
 import './product';
 import './cart';
 import './custom';
+
 
 import DropDown from './components/drop-down';
 import Form from './components/form';

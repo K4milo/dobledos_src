@@ -8,6 +8,7 @@
  			this.scrollScripts();
  			this.contactScripts();
  			this.productScripts();
+ 			this.testimonialScripts();
  		},
 
  		// scripts for Menu
@@ -127,6 +128,22 @@
 					$instanceCare.addClass($instanceContent.toLowerCase());
 					
 				});
+			}
+		},
+
+		testimonialScripts: function(){
+			let $carouselWrapper = $('.testimonials__wrapper');
+			let settings_slider = {
+				dots: false,
+				arrows: true
+			}
+
+
+			if($carouselWrapper.length > 0) {
+				if (!$carouselWrapper.hasClass('slick-initialized')) {
+					console.log('$carouselWrapper',$carouselWrapper)
+					$carouselWrapper.slick(settings_slider);
+				}
 			}
 		},
  	}
