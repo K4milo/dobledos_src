@@ -16,7 +16,7 @@
           <article class="custom-block-item">
             <div class="block--item-size">
                <img src="http://dobledos.depura-creatividad.com/img/cms/service-super-express.jpg" alt="" width="868" height="649" />
-               <h3>SERVICIO SÚPER EXRERSS</h3>
+               <h3>SERVICIO SÚPER EXPRESS</h3>
                <p>En 8 horas aproximadamente tomamos tus medidas, eligues la tela, los detalles y terminaciones y al cabo de ese tiempo, recibirás tu camisa hecha especialmente para tí. Aplica sólo para Bogotá.</p>
             </div>
             <div class="block--item-size">
