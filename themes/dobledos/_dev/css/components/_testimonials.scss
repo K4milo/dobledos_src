@@ -16,11 +16,13 @@
 		}
 
 		&.slick-prev {			
-			@include iconBg('../img/icons/prev.svg');			
+			@include iconBg('../img/icons/prev.svg');
+			left: torem(4px);		
 		}
 
 		&.slick-next {			
-			@include iconBg('../img/icons/next.svg');			
+			@include iconBg('../img/icons/next.svg');
+			right: torem(4px);		
 		}
 	}
 
@@ -36,6 +38,7 @@
 	.block-html {
 		&__item {
 			text-align: center;
+			padding:0 torem(20px);
 			p {
 				color: $white;
 				line-height: normal;
