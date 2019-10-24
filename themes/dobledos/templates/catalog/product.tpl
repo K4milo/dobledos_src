@@ -266,7 +266,7 @@
                   <div class="modal-body">
                     <img src="/img/cms/sizes-guideline.jpg" width="100%" alt="Guía de tallas">
 
-                    <a href="https://www.youtube.com/watch?v=jwxMNDFkyBA" target="_blank" class="btn btn-primary add-to-cart">Video guía de tallas</a>
+                    <a href="#" target="" class="btn btn-primary add-to-cart">Realiza la toma de medidas sobre esta.</a>
                   </div>
                 </div>
               </div>

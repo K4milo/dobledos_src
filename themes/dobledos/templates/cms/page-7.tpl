@@ -2,17 +2,17 @@
 
 {block name='page_content_container'}
   <section id="content" class="page-content page-cms page-cms-{$cms.id} custom-page-medida">
-    
+
     <div class="block-top-content block-top-content--parallax">
       {block name='cms_content'}
         {$cms.content nofilter}
       {/block}
     </div>
-    
+
     <div class="middle-blocks">
       {block name="size_content"}
         <section id="contentBlocks" class="custom-blocks">
-          
+
           <article class="custom-block-item">
             <div class="block--item-size">
                <img src="http://dobledos.depura-creatividad.com/img/cms/service-super-express.jpg" alt="" width="868" height="649" />
@@ -20,7 +20,7 @@
                <p>En 8 horas aproximadamente tomamos tus medidas, eligues la tela, los detalles y terminaciones y al cabo de ese tiempo, recibirás tu camisa hecha especialmente para tí. Aplica sólo para Bogotá.</p>
             </div>
             <div class="block--item-size">
-               <img src="http://dobledos.depura-creatividad.com/img/cms/service-express.jpg" alt="" width="868" height="649" />
+               <img src="http://dobledos.depura-creatividad.com/img/cms/Para-todos-los-estilos.png" alt="" width="868" height="649" />
                <h3>PARA TODOS LOS ESTILOS</h3>
                <p>Tenemos opciones para tus gustos y necesidades. Una prenda única a tu medida, con un diseño personalizado, y telas en hilaturas de alta calidad.</p>
             </div>
@@ -48,12 +48,12 @@
                <p>Garantizamos ajuste perfecto. Nuestra propuesta es asegurar que la camisa te quedará a la medida.</p>
             </div>
           </article>
-        	
-          
+
+
         </section>
       {/block}
     </div>
-    
+
     <div class="blocks-contact-info contact-blocks">
       {block name="size_content"}
         <div class="block--item-contact">
