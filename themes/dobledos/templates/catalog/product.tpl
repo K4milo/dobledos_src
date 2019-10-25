@@ -266,7 +266,7 @@
                   <div class="modal-body">
                     <img src="/img/cms/sizes-guideline.jpg" width="100%" alt="Guía de tallas">
 
-                    <a href="#" target="" class="btn btn-primary add-to-cart">Realiza la toma de medidas sobre esta.</a>
+                    <a href="#" target="" class="btn btn-primary add-to-cart">Elige la camisa que más te guste y <br> Realiza la toma de medidas sobre esta.</a>
                   </div>
                 </div>
               </div>
