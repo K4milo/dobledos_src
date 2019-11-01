@@ -17,7 +17,7 @@
             <div class="block--item-size">
                <img src="http://dobledos.depura-creatividad.com/img/cms/service-super-express.jpg" alt="" width="868" height="649" />
                <h3>SERVICIO SÚPER EXPRESS</h3>
-               <p>En 8 horas aproximadamente tomamos tus medidas, eligues la tela, los detalles y terminaciones y al cabo de ese tiempo, recibirás tu camisa hecha especialmente para tí. Aplica sólo para Bogotá.</p>
+               <p>En 8 horas aproximadamente tomamos tus medidas, eligues la tela, los detalles y terminaciones y al cabo de ese tiempo, recibirás tu camisa hecha especialmente para tí. *sólo para Bogotá.</p>
             </div>
             <div class="block--item-size">
                <img src="http://dobledos.depura-creatividad.com/img/cms/Para-todos-los-estilos.png" alt="" width="868" height="649" />
@@ -35,7 +35,7 @@
             <div class="block--item-size">
                <img src="http://dobledos.depura-creatividad.com/img/cms/a lamedida_express.jpg" alt="" width="868" height="649" />
                <h3>SERVICIO EXPRESS</h3>
-               <p>De un día para otro te entregamos tu camisa a la medida. Tomamos tus medidas en tu casa u oficina, sí por algún motivo no puedes ir a nuestra Tienda, elige la tela, los detalles y terminaciones de tu camisa. Aplica sólo para Bogotá.</p>
+               <p>De un día para otro te entregamos tu camisa a la medida. Tomamos tus medidas en tu casa u oficina, sí por algún motivo no puedes ir a nuestra Tienda, elige la tela, los detalles y terminaciones de tu camisa. *sólo para Bogotá.</p>
             </div>
             <div class="block--item-size">
                <img src="http://dobledos.depura-creatividad.com/img/cms/a lamedida-asesoria.jpg" alt="" width="868" height="649" />
