@@ -24,15 +24,15 @@
  *}
 {block name='header_banner'}
   <div class="header-banner">
-    
+
   </div>
 {/block}
 
-{block name='header_copy'}
+<!--{block name='header_copy'}
 <div class="top-bar-copy">
   <p>ENVÍOS NACIONALES GRATIS POR COMPRAS SUPERIORES A $300.000 PESOS COP</p>
 </div>
-{/block}
+{/block}-->
 
 <div class="main-navigation">
 
@@ -77,4 +77,3 @@
     {hook h='displaySearch'}
   </div>
 {/block}
-
