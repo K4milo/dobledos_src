@@ -89,6 +89,11 @@ src="https://www.facebook.com/tr?id=848478308683984&ev=PageView
 
     <nav class="navigation">
       {hook h='displayTop'}
+      {block name='header_nav'}
+        <div class="header-nav">
+          {hook h='displayNav2'}
+        </div>
+      {/block}
     </nav>
   {/block}
 
@@ -98,14 +103,6 @@ src="https://www.facebook.com/tr?id=848478308683984&ev=PageView
 
   {block name='account_user'}
     {hook h='displayNavFullWidth'}
-  {/block}
-
-
-
-  {block name='header_nav'}
-    <div class="header-nav">
-      {hook h='displayNav2'}
-    </div>
   {/block}
 
 </div>
