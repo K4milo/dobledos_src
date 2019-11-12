@@ -198,6 +198,7 @@ $browser-context: 16; // Default
   $media-xxs:"(min-width : 320px)"; // iPhone Retina 
   $media-xs: "(min-width : 480px)"; // Telefonos
   $media-sm: "(min-width: 768px)";  // Tablets
+  $media-mf: "(max-width: 768px)";  // MF
   $media-md: "(min-width: 992px)"; // Escritorios
   $media-lg: "(min-width: 1200px)"; // Resoluciones grandes
   
@@ -215,5 +216,8 @@ $browser-context: 16; // Default
   }
   @else if $consulta == lg {
     @media #{$media-lg}  { @content; }
+  }
+  @else if $consulta == mf {
+    @media #{$media-mf}  { @content; }
   }
 }

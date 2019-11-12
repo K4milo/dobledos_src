@@ -20,39 +20,43 @@ header {
 			padding: 0;
 			border-bottom: rem(2px) solid $gray;
 			text-align: center;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+			@include wrapper;
 			@include mq('sm'){
-				text-align: left;
+				text-align: left;				
 			}
 			&.scroll_fixed {
 				position: fixed;
 				top: 0;
 				left: 0;
 				width: 100%;
+				max-width: 100%;
 				background-color: $white;
 				z-index: 100;
 				// Trigger mobile
 				.mobile-button {
-					top: rem(12px);
+					top: rem(5px);
 				}
 			}
 			// branding
 			a {
-				&.logo {
-					display: block;
+				&.logo {					
 					text-align: center;
 					padding: rem(5px) rem(40px);
 					width: 100%;
-					@include mq('sm'){
-						display: inline-block;
-						vertical-align: middle;
+					@include mq('sm'){						
 						padding: rem(5px) rem(10px);
 						max-width: rem(230px);
 					}
 
 					img {
-						display: inline-block;
+						display: block;
 						max-width: 70%;
 						height: auto;
+						margin: 0 auto;
 						@include mq('sm'){
 							max-width: 100%;
 						}
@@ -77,7 +81,7 @@ header {
 				width: rem(40px);
 				height: rem(40px);
 				position: absolute;
-				top: rem(68px);
+				top: rem(4px);
 				left: rem(5px);
 				z-index: 20;
 				outline: none;
@@ -125,15 +129,19 @@ header {
 				display: none;
 				text-align: center;
 				position: relative;
+				width: 100%;
+				text-align: center;
 				@include mq('md'){
-					display: inline-block;
+					display: inline-flex;
 					text-align: left;
 					width: 65%;
 				}
 				.menu {
-					display: block;
 					float: none;
 					clear: both;
+					@include mq('md'){
+						width: 84%;
+					}
 					> ul {
 						margin: 0 0 0 0;
 						padding: 0 0 0 0;
@@ -144,21 +152,22 @@ header {
 						> li  {
 							display: block;
 							width: 100%;
-							text-align: left;
+							text-align: center;
 							position: relative;
 							@include mq('md'){
 								display: inline-flex;
 								flex: 1 1 0px;
 								width: auto;
-								text-align: center;
 							}
 							> a {
 								padding: rem(10px);
+								width: 100%;
 								display: block;
 								font-weight: bold;
 								text-transform: uppercase;
 								border-bottom: rem(1px) solid $gray;
 								@include mq('md'){
+									text-align: center;
 									border: none;
 									padding: rem(26px) rem(15px);
 								}
@@ -171,7 +180,7 @@ header {
 								}
 							}
 							.sub-menu,
-							div {
+							> div {
 								display: none;
 								border: none;
 								background-color: $grayLt;
@@ -183,9 +192,13 @@ header {
 									margin: 0 0 0 0;
 									padding: 0 0 0 0;
 									position: absolute;
+									top: 100%;
 									width: 100%;
+									z-index: 10;
 								}
 								ul {
+									display: block;
+									padding: 0 0;
 									li {
 										display: block;
 										margin: 0 0 0 0;
@@ -193,6 +206,7 @@ header {
 										width: 100%;
 										float: none;
 										a {
+											display: block;
 											padding: rem(12px);
 											background-color: transparent;
 											&:hover {
@@ -217,15 +231,21 @@ header {
 			// Search icon
 			.search-btn {
 				cursor: pointer;
-				display: inline-block;
-				vertical-align: middle;
 				margin: 0 rem(10px);
+				position: absolute;
+				top: rem(14px);
+				right: rem(14px);
+				@include mq('md'){
+					position: unset;
+				}
 			}
 			// User menu
 			.header-nav {
-				display: inline-block;
+				display: block;
 				vertical-align: middle;
 				margin: 0 0;
+				width: 100%;
+				text-align: center;
 				@include mq('md'){
 					margin: 0 rem(10px);
 					display: flex;
@@ -233,8 +253,12 @@ header {
 				}
 
 				#_desktop_cart {
-					display: inline-block;
-					vertical-align: middle;
+					width: rem(70px);
+					position: relative;
+					@include mq('mf'){
+						display: inline-block;
+						vertical-align: middle;
+					}
 					.blockcart {
 						float: none;
 						clear: both;
@@ -255,11 +279,13 @@ header {
 				}
 
 				#_desktop_user_info {
-					display: inline-block;
-					vertical-align: middle;
 					width: rem(40px);
 					height: rem(40px);
 					position: relative;
+					@include mq('mf'){
+						display: inline-block;
+						vertical-align: middle;
+					}
 					.user-info {
 						position: relative;
 						width: rem(40px);
