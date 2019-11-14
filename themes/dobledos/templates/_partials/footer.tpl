@@ -56,4 +56,11 @@
       </div>
     </div>
   </div>
+  <div class="social">
+  <ul>
+  </li><li><a href="http://bit.ly/2KmDyit" target="_blank" class="whatsapp" aria-hidden="true"></a></li><li>
+  </li><li><a href="https://www.facebook.com/CamisasDobleDos/" target="_blank" class="facebook" aria-hidden="true"></a></li><li>
+  </li><li><a href="https://www.instagram.com/camisasdobledos/" target="_blank" class="instagram" aria-hidden="true"></a></li><li>
+  </li></ul>
+  </div>
 </div>

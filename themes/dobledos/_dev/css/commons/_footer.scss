@@ -1,5 +1,6 @@
 footer {
 	.navbar-fixed-bottom {
+
 		width: rem(150px);
 		height: rem(150px);
 		left: rem(13px);
@@ -11,7 +12,7 @@ footer {
 
 		@include mq(xs){
 			text-align: right;
-			display: block;
+			display: none;
 		}
 	}
 	&#footer {
@@ -50,6 +51,34 @@ footer {
 						&.facebook{
 							background-image: url('../img/svg/facebook-logo-white.svg');
 						}
+						&.whatsapp{
+							background-image: url('../img/svg/whatsapp.svg');
+						}
+					}
+				}
+			}
+		}
+		.social{
+			position: fixed;
+    left: 0;
+    top: 350px;
+    z-index: 100;
+
+			ul{
+				li{
+					.whatsapp{
+						background-image: url('../img/svg/whatsapp.svg');
+					}
+					a{
+						display: block;
+						float: none;
+						width: 35px;
+						height: 35px;
+						background-position: 50%;
+						background-color: #a91010;
+						background-size: 65%;
+						background-repeat: no-repeat;
+						margin: 0 10px;
 					}
 				}
 			}
