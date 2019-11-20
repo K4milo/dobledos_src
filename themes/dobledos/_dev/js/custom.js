@@ -21,7 +21,7 @@
  			this.$menuWrapper = $('.sub-menu.js-sub-menu > ul');
  			this.$menuWrapper.append('<li><a href="/pagina/12-ventas-corporativas" class="dropdown-submenu">Ventas Corporativas</a></li>');
  			$('.featured-products h2.products-section-title.text-uppercase').html('Productos Destacados');
-
+        $('a.category:first').attr('href', 'https://dobledos.com/2-camisas');
  			// Mobile logic
  			let $button = $('button.mobile-button');
  			let $menuWrapper = $('.main-navigation .navigation');
@@ -43,7 +43,7 @@
 			this.$searchToggle.slideToggle('slow');
 		},
 
-		scrollScripts: function() { 
+		scrollScripts: function() {
 			$(window).scroll(function() {
 
 				let scroll    = $(window).scrollTop();
@@ -58,7 +58,7 @@
 		},
 
 		// Scripts for Slider
-		
+
 		homeSlider: function(){
 			this.$sliderWrapper = $('.carousel-inner');
 			this.$sliderItems = this.$sliderWrapper.find('.carousel-item');
@@ -107,13 +107,13 @@
 		},
 
 		contactScripts: function() {
-			if($('body').hasClass('page-contact') || $('body').hasClass('cms-id-7')) {	
+			if($('body').hasClass('page-contact') || $('body').hasClass('cms-id-7')) {
 				let formWrapper = $('section.page-content form');
 
 				if(formWrapper.length > 0) {
 					formWrapper.find('h3').text('Contáctenos');
 				}
-			}			
+			}
 		},
 
 		// Product scripts
@@ -126,7 +126,7 @@
 					let $instanceContent = $instanceCare.text();
 
 					$instanceCare.addClass($instanceContent.toLowerCase());
-					
+
 				});
 			}
 		},
@@ -147,6 +147,6 @@
 			}
 		},
  	}
- 	
+
  	// Trigger functions
  	$scopes.init();

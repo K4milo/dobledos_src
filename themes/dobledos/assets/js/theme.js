@@ -1768,7 +1768,7 @@ var $scopes = {
 		this.$menuWrapper = $('.sub-menu.js-sub-menu > ul');
 		this.$menuWrapper.append('<li><a href="/pagina/12-ventas-corporativas" class="dropdown-submenu">Ventas Corporativas</a></li>');
 		$('.featured-products h2.products-section-title.text-uppercase').html('Productos Destacados');
-
+		$('a.category:first').attr('href', 'https://dobledos.com/2-camisas');
 		// Mobile logic
 		var $button = $('button.mobile-button');
 		var $menuWrapper = $('.main-navigation .navigation');

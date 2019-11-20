@@ -12,7 +12,7 @@ footer {
 
 		@include mq(xs){
 			text-align: right;
-			display: none;
+			display: block;
 		}
 	}
 	&#footer {

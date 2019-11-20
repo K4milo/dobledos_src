@@ -42,7 +42,7 @@ $browser-context: 16; // Default
 
 // Icon default use
 @mixin iconBg($path, $size: 100%){
-  background-image: url($path);
+  background-image: url($path)!important;
   background-size: $size;
   background-repeat: no-repeat;
   background-position: center center;
@@ -67,7 +67,7 @@ $browser-context: 16; // Default
 }
 
 // Gradients
-@mixin background-gradient($start-color, $end-color, $orientation) { 
+@mixin background-gradient($start-color, $end-color, $orientation) {
     background: $start-color;
 
     @if $orientation == 'vertical' {
@@ -87,7 +87,7 @@ $browser-context: 16; // Default
     display: block;
     height: 0;
     width: 0;
-    
+
     @if $direction == 'top' {
         border-left: $size solid transparent;
       border-right: $size solid transparent;
@@ -105,16 +105,16 @@ $browser-context: 16; // Default
       border-right: $size solid $color;
       border-bottom: $size solid transparent;
     } @else if $direction == 'top-left' {
-        border-top: $size solid $color; 
-        border-right: $size solid transparent;  
+        border-top: $size solid $color;
+        border-right: $size solid transparent;
     } @else if $direction == 'top-right' {
-        border-top: $size solid $color; 
+        border-top: $size solid $color;
         border-left: $size solid transparent;
     } @else if $direction == 'bottom-left' {
-        border-bottom: $size solid $color; 
-        border-right: $size solid transparent;  
+        border-bottom: $size solid $color;
+        border-right: $size solid transparent;
     } @else if $direction == 'bottom-right' {
-        border-bottom: $size solid $color; 
+        border-bottom: $size solid $color;
         border-left: $size solid transparent;
     }
 }
@@ -129,7 +129,7 @@ $browser-context: 16; // Default
 // Define vertical, horizontal, or both position
 @mixin center($position) {
   position: absolute;
-  
+
   @if $position == 'vertical' {
     top: 50%;
     -webkit-transform: translateY(-50%);
@@ -188,20 +188,20 @@ $browser-context: 16; // Default
   &::-webkit-input-placeholder {@content}
   &:-moz-placeholder           {@content}
   &::-moz-placeholder          {@content}
-  &:-ms-input-placeholder      {@content}  
+  &:-ms-input-placeholder      {@content}
 }
 
 // MQS
 
 @mixin mq ($consulta) {
-  
-  $media-xxs:"(min-width : 320px)"; // iPhone Retina 
+
+  $media-xxs:"(min-width : 320px)"; // iPhone Retina
   $media-xs: "(min-width : 480px)"; // Telefonos
   $media-sm: "(min-width: 768px)";  // Tablets
   $media-mf: "(max-width: 768px)";  // MF
   $media-md: "(min-width: 992px)"; // Escritorios
   $media-lg: "(min-width: 1200px)"; // Resoluciones grandes
-  
+
   @if $consulta == xxs {
     @media #{$media-xxs} { @content; }
   }
