@@ -24,7 +24,89 @@
  *}
 {extends file='page.tpl'}
 
+
+
     {block name='page_content_container'}
+    <section id="counter">
+      <div class="counterContainer"style="background-image: url(https://dobledos.com/img/cms/Asset%203_1.png);">
+        <div id="countdownContainer" class="countdownContainer">
+          <div>
+            <img src="https://dobledos.com/img/cms/Asset 4.png" alt="">
+            <div class="info-title">
+              <hr>
+              <h2>BLACK FRIDAY</h2>
+              <hr>
+            </div>
+            <div class="info-numeros">
+              <div class="">
+                <h3 id="days">29</h3>
+                <h2>DÍAS</h2>
+              </div>
+              <div class="">
+                <h3 id="hours">11</h3>
+                <h2>HORAS</h2>
+              </div>
+              <div class="">
+                <h3 id="minutes">13</h3>
+                <h2>MIN</h2>
+              </div>
+              <div class="">
+                <h3 id="seconds">27</h3>
+                <h2>SEG</h2>
+              </div>
+
+            </div>
+            <div class="esperalo">
+              <h3>¡ESPÉRALO!</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script language="JavaScript" type="text/javascript">
+   {literal}
+   function countdown(){
+   				var now = new Date();
+   				var eventDate = new Date(2019, 10, 29);
+
+   				var currentTiime = now.getTime();
+   				var eventTime = eventDate.getTime();
+
+   				var remTime = eventTime - currentTiime;
+
+   				if(remTime <= 0) {
+   					document.getElementById('countdownContainer').style.display = 'none';
+   					document.getElementById('greetingMsg').style.display = '';
+   					return;
+   				}
+          var puntos = ":";
+   				var s = Math.floor(remTime / 1000);
+   				var m = Math.floor(s / 60);
+   				var h = Math.floor(m / 60);
+   				var d = Math.floor(h / 24);
+
+   				h %= 24;
+   				m %= 60;
+   				s %= 60;
+
+   				h = (h < 10) ? "0" + h : h;
+   				m = (m < 10) ? "0" + m : m;
+   				s = (s < 10) ? "0" + s : s;
+
+   				document.getElementById("days").textContent = d+ puntos;
+   				document.getElementById("days").innerText = d+ puntos;
+
+   				document.getElementById("hours").textContent = h+ puntos;
+   				document.getElementById("minutes").textContent = m+ puntos;
+   				document.getElementById("seconds").textContent = s;
+
+   				setTimeout(countdown, 1000);
+   			}
+
+   			countdown();
+   {/literal}
+</script>
+
       <section id="content" class="page-home">
         {block name='page_content_top'}{/block}
 

@@ -1,4 +1,61 @@
-#custom-text { 
+.counterContainer{
+	height: 500px;
+	@include mq ('md'){
+	height: 800px;
+	}
+}
+.countdownContainer{
+	text-align: center;
+	padding: 8% 20%;
+}
+
+.info-title h2{
+	font-family: karla;
+	font-size: 50px;
+	font-weight: 700;
+	color: $white;
+	letter-spacing: 8px;
+	@include mq ('md'){
+		font-size: 80px;
+	}
+}
+.info-title hr{
+	border-top: 4px solid $white;
+}
+.info-numeros{
+	display: flex;
+	justify-content: center;
+
+	h3{
+		font-size: 35px;
+    color: white;
+		padding: 5px 15px;
+		font-family: karla;
+		@include mq ('md'){
+			font-size: 100px;
+			padding: 20px 35px;
+		}
+	}
+	h2{
+		font-size: 18px;
+		color: white;
+		font-family: karla;
+		@include mq ('md'){
+			font-size: 50px;
+			padding: 35px;
+		}
+	}
+
+}
+.esperalo h3{
+	font-family: karla;
+	color: white;
+	font-size: 30px;
+	letter-spacing: 4px;
+}
+
+
+#custom-text {
 	.row {
 		&.row-banner {
 			display: block;
@@ -21,7 +78,7 @@
 					@include font(20px);
 				}
 			}
-			
+
 			// Simple white banner
 			&.row-banner--white {
 				background-color: $white;
@@ -37,7 +94,7 @@
 					color: $white;
 				}
 				@include mq('md') {
-					padding: rem(105px) 0;	
+					padding: rem(105px) 0;
 				}
 			}
 		}

@@ -73,6 +73,7 @@ $(window).on('resize', function() {
 });
 
 $(document).ready(function() {
+
 	if (prestashop.responsive.mobile) {
 		toggleMobileStyles();
 	}

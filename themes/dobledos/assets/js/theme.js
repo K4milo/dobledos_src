@@ -2731,6 +2731,7 @@ function toggleMobileStyles() {
 });
 
 (0, _jquery2['default'])(document).ready(function () {
+
 	if (_prestashop2['default'].responsive.mobile) {
 		toggleMobileStyles();
 	}
