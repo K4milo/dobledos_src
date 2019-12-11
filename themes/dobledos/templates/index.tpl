@@ -27,7 +27,7 @@
 
 
     {block name='page_content_container'}
-    <section id="counter">
+    <!--<section id="counter">
       <div class="counterContainer"style="background-image: url(https://dobledos.com/img/cms/Asset%203_1.png);">
         <div id="countdownContainer" class="countdownContainer">
           <div>
@@ -39,25 +39,25 @@
             </div>
             <div class="info-numeros">
               <div class="">
-                <h3 id="days">29</h3>
+                <h3 id="days">0:</h3>
                 <h2>DÍAS</h2>
               </div>
               <div class="">
-                <h3 id="hours">11</h3>
+                <h3 id="hours">0:</h3>
                 <h2>HORAS</h2>
               </div>
               <div class="">
-                <h3 id="minutes">13</h3>
+                <h3 id="minutes">0:</h3>
                 <h2>MIN</h2>
               </div>
               <div class="">
-                <h3 id="seconds">27</h3>
+                <h3 id="seconds">0</h3>
                 <h2>SEG</h2>
               </div>
 
             </div>
             <div class="esperalo">
-              <h3>¡ESPÉRALO!</h3>
+              <h3>¡Disfruta nuestros descuentos!</h3>
             </div>
           </div>
         </div>
@@ -75,7 +75,7 @@
    				var remTime = eventTime - currentTiime;
 
    				if(remTime <= 0) {
-   					document.getElementById('countdownContainer').style.display = 'none';
+   					//document.getElementById('countdownContainer').style.display = 'none';
    					document.getElementById('greetingMsg').style.display = '';
    					return;
    				}
@@ -106,7 +106,7 @@
    			countdown();
    {/literal}
 </script>
-
+-->
       <section id="content" class="page-home">
         {block name='page_content_top'}{/block}
 
